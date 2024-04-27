@@ -2,6 +2,7 @@ import { BsCalendar2Date } from 'react-icons/bs';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import CV from '../../assets/resume/CV.pdf';
+import PropTypes from 'prop-types';
 import './about.scss';
 
 const About = ({ menu }) => {
@@ -19,18 +20,18 @@ const About = ({ menu }) => {
             <div className="row">
               <div className="about-text">
                 <h3 data-aos="fade-in">
-                  I'm Charlotte Divine Dusenge, a
+                  I&apos;m Charlotte Divine Dusenge, a
                   {' '}
                   <span>Web Developer</span>
                 </h3>
                 <p data-aos="fade-in">
-                  I'm a complex problem-solver with an analytical and driven
+                  I&apos;m a complex problem-solver with an analytical and driven
                   mindset. Additionally, I possess strong organizational and
                   teamwork skills, making me a dedicated and cooperative team
                   worker. I am committed to achieving demanding development
                   objectives within tight schedules, while consistently
                   producing impeccable code. To enhance my skills, I enrolled in
-                  a remote web development school called 'Microverse,' where I
+                  a remote web development school called &apos;Microverse,&apos; where I
                   collaborate with a diverse group of developers from around the
                   world, often through pair programming. Furthermore, I expanded
                   my knowledge in Node.js by participating in a program called
@@ -154,7 +155,7 @@ const About = ({ menu }) => {
                           Full Stack Web Development Certification at The Gym
                         </h4>
                         <p className="timeline-text">
-                          - Rwanda's most intense software development
+                          - Rwanda&apos;s most intense software development
                           trainee program. where I spent 9000+ hours mastering
                           algorithms, data structures  while developing
                           projects with NodeJs, NestJs, Tailwind CSS,
@@ -267,6 +268,9 @@ const About = ({ menu }) => {
       </div>
     </section>
   );
+};
+About.propTypes = {
+  menu: PropTypes.bool.isRequired,
 };
 
 export default About;

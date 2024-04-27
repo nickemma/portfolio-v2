@@ -5,6 +5,7 @@ import Typed from 'typed.js';
 import './home.scss';
 import logo from '../../assets/images/1DIVINE.png';
 import BgCanvas from '../bg-canvas/BgCanvas';
+import PropTypes from 'prop-types';
 
 const Home = ({ menu }) => {
   const mouseDown = useRef(false);
@@ -60,19 +61,19 @@ const Home = ({ menu }) => {
           <div className="row">
             <div className="home-info padd-15">
               <h3 className="hello">
-                Hey there, I'm
+                Hey there, I&apos;m
                 {' '}
                 <span className="name">Charlotte Divine</span>
               </h3>
               <h3 className="my-profession">
-                I'm a
+                I&apos;m a
                 {' '}
                 <span className="typing" ref={el} />
               </h3>
               <p>
                 I can help you build a product , feature or website. Look
                 through some of my work and experience! If you like what you see
-                and have a project you need coded, don’t hestiate to contact me.
+                and have a project you need coded, don&apos;t hestiate to contact me.
               </p>
 
               <button
@@ -99,6 +100,10 @@ const Home = ({ menu }) => {
       </section>
     </>
   );
+};
+
+Home.propTypes = {
+  menu: PropTypes.bool.isRequired,
 };
 
 export default Home;

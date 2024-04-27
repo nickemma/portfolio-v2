@@ -1,16 +1,15 @@
-function randomIntFromRange(min, max) {
+export const randomIntFromRange = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-function randomColor(colors) {
+export const randomColor = (colors) => {
   return colors[Math.floor(Math.random() * colors.length)];
 }
 
-function distance(x1, y1, x2, y2) {
+export const distance = (x1, y1, x2, y2) => {
   const xDist = x2 - x1;
   const yDist = y2 - y1;
 
   return Math.sqrt(xDist ** 2 + yDist ** 2);
 }
 
-module.exports = { randomIntFromRange, randomColor, distance };

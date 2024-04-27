@@ -7,6 +7,7 @@ import {
   FaHome,
   FaBars,
 } from 'react-icons/fa';
+import PropTypes from 'prop-types';
 import './header.scss';
 
 const Header = ({ menu, handleHamburger, handleLinkClick }) => {
@@ -67,6 +68,12 @@ const Header = ({ menu, handleHamburger, handleLinkClick }) => {
       </nav>
     </header>
   );
+};
+
+Header.propTypes = {
+  menu: PropTypes.bool.isRequired,
+  handleHamburger: PropTypes.func.isRequired,
+  handleLinkClick: PropTypes.func.isRequired,
 };
 
 export default Header;

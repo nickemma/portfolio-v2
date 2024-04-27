@@ -1,6 +1,6 @@
-import React from 'react';
 import { AiOutlineLinkedin } from 'react-icons/ai';
 import { FaAngellist, FaGithub, FaMedium } from 'react-icons/fa';
+import PropTypes from 'prop-types';
 import './contact.scss';
 
 const Contact = ({ menu }) => (
@@ -12,7 +12,7 @@ const Contact = ({ menu }) => (
         </div>
       </div>
       <h3 className="contact-title padd-15">Do You Have Any Questions ?</h3>
-      <h4 className="contact-sub-title padd-15">I'M AT YOUR SERVICE</h4>
+      <h4 className="contact-sub-title padd-15">I&apos;M AT YOUR SERVICE</h4>
       <div className="row">
         <div className="contact-info-item padd-15">
           <div className="icon">
@@ -50,5 +50,9 @@ const Contact = ({ menu }) => (
     </div>
   </section>
 );
+
+Contact.propTypes = {
+  menu: PropTypes.bool.isRequired,
+};
 
 export default Contact;

@@ -2,6 +2,7 @@
 /* eslint-disable react/no-this-in-sfc */
 import { useRef, useEffect } from 'react';
 import { randomColor } from '../../utils/utils';
+import PropTypes from 'prop-types';
 
 const BgCanvas = ({ mouseDown }) => {
   const canvasRef = useRef(null);
@@ -95,4 +96,7 @@ const BgCanvas = ({ mouseDown }) => {
   );
 };
 
+BgCanvas.propTypes = {
+  mouseDown: PropTypes.bool.isRequired,
+};
 export default BgCanvas;

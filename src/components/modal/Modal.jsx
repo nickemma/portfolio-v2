@@ -1,7 +1,7 @@
 import { AiOutlineClose, AiOutlineGithub } from 'react-icons/ai';
 import { HiOutlineExternalLink } from 'react-icons/hi';
 import { useSpring, animated } from '@react-spring/web';
-
+import PropTypes from 'prop-types';
 import './modal.scss';
 
 const Modal = ({ showModal, setShowModal, currentProject }) => {
@@ -82,6 +82,20 @@ const Modal = ({ showModal, setShowModal, currentProject }) => {
       </animated.div>
     </div>
   ) : null;
+};
+
+Modal.propTypes = {
+  showModal: PropTypes.bool.isRequired,
+  setShowModal: PropTypes.func.isRequired,
+  currentProject: PropTypes.shape({
+    name: PropTypes.string,
+    techs: PropTypes.arrayOf(PropTypes.string),
+    description: PropTypes.string,
+    image: PropTypes.string,
+    linkToLiveVersion: PropTypes.string,
+    linkToSource: PropTypes.string,
+    linkToBackend: PropTypes.string,
+  }).isRequired,
 };
 
 export default Modal;

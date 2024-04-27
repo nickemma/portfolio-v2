@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import { useState, useRef } from 'react';
 import './portfolio.scss';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -9,6 +9,7 @@ import moni from '../../assets/images/moni.png';
 import bookme from '../../assets/images/bookme.png';
 import ecommerce from '../../assets/images/ecommerce.png';
 import Modal from '../modal/Modal';
+import PropTypes from 'prop-types';
 
 const Portfolio = ({ menu }) => {
   const [currentFilter, setCurrentFilter] = useState('All');
@@ -209,6 +210,10 @@ const Portfolio = ({ menu }) => {
       />
     </>
   );
+};
+
+Portfolio.propTypes = {
+  menu: PropTypes.bool.isRequired,
 };
 
 export default Portfolio;

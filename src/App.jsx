@@ -6,7 +6,7 @@ import Contact from './components/contact/Contact';
 import About from './components/about/About';
 import Portfolio from './components/portfolio/Portfolio';
 
-function App() {
+const App = () => {
   const [menuState, setMenuState] = useState(false);
 
   const handleMenuState = () => {
