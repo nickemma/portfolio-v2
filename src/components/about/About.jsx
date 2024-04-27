@@ -1,7 +1,7 @@
 import { BsCalendar2Date } from 'react-icons/bs';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import CV from '../../assets/resume/CV.pdf';
+import CV from '../../assets/resume/Nicholas.pdf'
 import PropTypes from 'prop-types';
 import './about.scss';
 
@@ -20,24 +20,18 @@ const About = ({ menu }) => {
             <div className="row">
               <div className="about-text">
                 <h3 data-aos="fade-in">
-                  I&apos;m Charlotte Divine Dusenge, a
+                  I&apos;m Nicholas Emmanuel C, a
                   {' '}
-                  <span>Web Developer</span>
+                  <span>Software Developer</span>
                 </h3>
                 <p data-aos="fade-in">
-                  I&apos;m a complex problem-solver with an analytical and driven
-                  mindset. Additionally, I possess strong organizational and
+                  I&apos;m a resourceful problem-solver with a keen analytical mindset and a drive for excellence. Additionally, I possess strong organizational and
                   teamwork skills, making me a dedicated and cooperative team
-                  worker. I am committed to achieving demanding development
-                  objectives within tight schedules, while consistently
-                  producing impeccable code. To enhance my skills, I enrolled in
-                  a remote web development school called &apos;Microverse,&apos; where I
-                  collaborate with a diverse group of developers from around the
-                  world, often through pair programming. Furthermore, I expanded
-                  my knowledge in Node.js by participating in a program called
-                  Andela, which focuses on East African developers. During my
-                  free time, I derive joy from listening to music and enjoy
-                  solving problems for fun.
+                  player. I have experience in building web products from idea to launch.
+                  To further hone my skills, I enrolled in Microverse, a renowned remote web development school, where I collaborated with talented developers worldwide, often engaging in pair programming sessions. Additionally, I&apos;m pursuing a degree in Computer Science and CyberSecurity at the University of the people. 
+                </p>
+                <p data-aos="fade-in">
+                I am currently open to new opportunities 🌎 and ready to collaborate on new projects either remotely or on site.
                 </p>
               </div>
             </div>
@@ -48,7 +42,7 @@ const About = ({ menu }) => {
                     <p>
                       Name :
                       {' '}
-                      <span>Diva</span>
+                      <span>Nicholas Emmanuel</span>
                     </p>
                   </div>
                   <div className="info-item padd-15" data-aos="fade-in">
@@ -62,7 +56,7 @@ const About = ({ menu }) => {
                     <p>
                       Email :
                       {' '}
-                      <span>divinemaina@gmail.com</span>
+                      <span>nicholasemmanuel321 <br /> @gmail.com</span>
                     </p>
                   </div>
 
@@ -70,21 +64,21 @@ const About = ({ menu }) => {
                     <p>
                       Certifications :
                       {' '}
-                      <span>Full Stack Developer</span>
+                      <span>Full Stack Software<br />Developer</span>
                     </p>
                   </div>
                   <div className="info-item padd-15" data-aos="fade-in">
                     <p>
                       Phone :
                       {' '}
-                      <span>+250-782-971-842</span>
+                      <span>+234-916-319-8026</span>
                     </p>
                   </div>
                   <div className="info-item padd-15" data-aos="fade-in">
                     <p>
                       Hobbies :
                       {' '}
-                      <span>Music $ praying</span>
+                      <span>Music $ Praying </span>
                     </p>
                   </div>
                 </div>
@@ -107,30 +101,30 @@ const About = ({ menu }) => {
                   <div className="skill-item" data-aos="fade-in">
                     <h3>React</h3>
                     <div className="progress">
-                      <div className="progress-in" style={{ width: '96%' }} />
-                      <div className="skill-percent">96%</div>
+                      <div className="progress-in" style={{ width: '93%' }} />
+                      <div className="skill-percent">93%</div>
                     </div>
                   </div>
                   <div className="skill-item" data-aos="fade-in">
-                    <h3>NodeJs</h3>
+                    <h3>MERN Stack</h3>
                     <div className="progress">
-                      <div className="progress-in" style={{ width: '96%' }} />
-                      <div className="skill-percent">96%</div>
+                      <div className="progress-in" style={{ width: '90%' }} />
+                      <div className="skill-percent">90%</div>
                     </div>
                   </div>
 
                   <div className="skill-item" data-aos="fade-in">
-                    <h3>ES6</h3>
+                    <h3>Golang</h3>
                     <div className="progress">
-                      <div className="progress-in" style={{ width: '99%' }} />
-                      <div className="skill-percent">99%</div>
+                      <div className="progress-in" style={{ width: '82%' }} />
+                      <div className="skill-percent">82%</div>
                     </div>
                   </div>
                   <div className="skill-item" data-aos="fade-in">
-                    <h3>Tailwind</h3>
+                    <h3>Penetration/API testing</h3>
                     <div className="progress">
-                      <div className="progress-in" style={{ width: '100%' }} />
-                      <div className="skill-percent">100%</div>
+                      <div className="progress-in" style={{ width: '75%' }} />
+                      <div className="skill-percent">75%</div>
                     </div>
                   </div>
                 </div>
@@ -148,23 +142,14 @@ const About = ({ menu }) => {
                           <BsCalendar2Date className="fa fa-calendar" />
                           <i>
                             {' '}
-                            2023 -2024
+                            2023 - 2026
                           </i>
                         </h3>
                         <h4 className="timeline-title">
-                          Full Stack Web Development Certification at The Gym
+                          BSc in Computer Science and CyberSecurity
                         </h4>
                         <p className="timeline-text">
-                          - Rwanda&apos;s most intense software development
-                          trainee program. where I spent 9000+ hours mastering
-                          algorithms, data structures  while developing
-                          projects with NodeJs, NestJs, Tailwind CSS,
-                          JavaScript and React.
-                        </p>
-                        <p className="timeline-text">
-                          - Developed skills in on-site pair-programming using
-                          GitHub, industry-standard git-flow, and daily standups
-                          to communicate and collaborate
+                          - Currently pursuing a degree in Computer Science and CyberSecurity at the University of the People. I have gained a solid foundation in computer science, cybersecurity, and programming languages like Python, Java, and C++. I have also developed skills in network security, cryptography, and ethical hacking. I am currently working on a project that involves building a secure restAPI web services using the Golang and implementing API security measures to protect user data and prevent cyber attacks.
                         </p>
                       </div>
                     </div>
@@ -180,17 +165,15 @@ const About = ({ menu }) => {
                         <div className="circle-dot" />
                         <h3 className="timeline-date">
                           <BsCalendar2Date className="fa fa-calendar" />
-                          <i>2022-2024</i>
+                          <i>2023 - 2024</i>
                         </h3>
                         <h4 className="timeline-title">
-                          Code Reviewer at Microverse
+                        Full stack developer
                         </h4>
                         <p className="timeline-text">
-                          - Performing code reviews for HTML, React,Javascript
-                          & RoR-based projects for over 100+ junior developers to
-                          ensure their projects comply with style and functionality
-                          guidelines and deliver the best code
-                          quality.
+                          - These experiences have equipped me with the skills and mindset needed to
+                            contribute effectively to a dynamic and innovative work environment, where
+                            collaboration, innovation, and adaptability are paramount.
                         </p>
                       </div>
                     </div>
@@ -239,23 +222,22 @@ const About = ({ menu }) => {
                         <div className="circle-dot" />
                         <h3 className="timeline-date">
                           <BsCalendar2Date className="fa fa-calendar" />
-                          <i>2022-2024</i>
+                          <i>2022-2023</i>
                         </h3>
                         <h4 className="timeline-title">
-                          Mentor at Microverse
+                        Front-End Developer Intern
                         </h4>
                         <p className="timeline-text">
-                          - Mentored junior web developers, providing technical
-                          support through code quality advices.
-
+                          - Collaborated with a dynamic team of developers to create innovative web
+                            applications.
                         </p>
                         <p className="timeline-text">
-                          - Used to provide advice and tips on maintaining
-                          motivation to maintain longevity in the program.
+                          - Contributed to the development of XOOMMIT’s custom software, ensuring
+                            seamless user experiences.
                         </p>
                         <p className="timeline-text">
-                          - Providing specialized technical advice and guidance
-                          to multiple junior developers over 1:1 zoom calls.
+                          - Gained practical experience in agile development methodologies and version
+                          control (e.g., Git).
                         </p>
                       </div>
                     </div>

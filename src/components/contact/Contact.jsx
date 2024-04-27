@@ -1,5 +1,5 @@
-import { AiOutlineLinkedin } from 'react-icons/ai';
-import { FaAngellist, FaGithub, FaMedium } from 'react-icons/fa';
+import { AiOutlineLinkedin, AiOutlineTwitter } from 'react-icons/ai';
+import { FaGithub, FaMedium } from 'react-icons/fa';
 import PropTypes from 'prop-types';
 import './contact.scss';
 
@@ -16,7 +16,7 @@ const Contact = ({ menu }) => (
       <div className="row">
         <div className="contact-info-item padd-15">
           <div className="icon">
-            <a href="https://github.com/divinecharlotte" target="_blank" rel="noreferrer">
+            <a href="https://github.com/nickemma" target="_blank" rel="noreferrer">
               <FaGithub className="react-icon" />
             </a>
             <h4>GitHub</h4>
@@ -24,7 +24,7 @@ const Contact = ({ menu }) => (
         </div>
         <div className="contact-info-item padd-15">
           <div className="icon">
-            <a href="https://medium.com/@divinemaina" target="_blank" rel="noreferrer">
+            <a href="https://medium.com/@nicholasemmanuel321" target="_blank" rel="noreferrer">
               <FaMedium className="react-icon" />
             </a>
             <h4>Medium</h4>
@@ -32,7 +32,7 @@ const Contact = ({ menu }) => (
         </div>
         <div className="contact-info-item padd-15">
           <div className="icon">
-            <a href="https://www.linkedin.com/in/charlotte-divine-dusenge/" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/techieemma/" target="_blank" rel="noreferrer">
               <AiOutlineLinkedin className="react-icon" />
             </a>
             <h4>LinkedIn</h4>
@@ -40,10 +40,10 @@ const Contact = ({ menu }) => (
         </div>
         <div className="contact-info-item padd-15">
           <div className="icon">
-            <a href="https://angel.co/u/charlotte-divine-dusenge" target="_blank" rel="noreferrer">
-              <FaAngellist className="react-icon" />
+            <a href="https://twitter.com/techieEmma" target="_blank" rel="noreferrer">
+              < AiOutlineTwitter className="react-icon" />
             </a>
-            <h4>AngelList</h4>
+            <h4>Twitter</h4>
           </div>
         </div>
       </div>

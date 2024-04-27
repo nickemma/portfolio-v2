@@ -18,8 +18,8 @@ const Header = ({ menu, handleHamburger, handleLinkClick }) => {
     <header className={`aside ${menu && 'open'}`}>
       <div className="logo">
         <NavLink to="/" onClick={handleLinkClick}>
-          <span>D</span>
-          ivine
+          <span>N</span>
+          icholas
         </NavLink>
       </div>
       <button
