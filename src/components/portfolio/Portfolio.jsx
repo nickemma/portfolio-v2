@@ -19,38 +19,45 @@ const Portfolio = ({ menu }) => {
 
   const projects = useRef([
     {
-      name: "Tourify",
+      name: "RentMe",
       description:
-        "'Tourify'This is an app in which you can reserve a tour, create a tour, delete a tour and show all your reserved tours. This app was created separating the Front-End and the Back-End in two repositories. This is the repository of the front-end API",
-      techs: ["React & Redux", "CSS3", "Ruby on Rails"],
+        "'RentMe' is a car rental agencies which serves people who require a temporary vehicle, It allow users to create an account,and book a car for a specific period of time. view all available Options, and view all bookings made by a specific user.",
+
+      techs: [
+        "React & Redux",
+        "TailwindCss",
+        "Ruby on Rails",
+        "Framer Motion",
+        "SwiperJs",
+      ],
       image: bookme,
-      linkToLiveVersion: "https://book-tours.netlify.app/",
-      linkToSource: "https://github.com/ABDULALI3468/bookMe-frontend",
+      linkToLiveVersion: "https://car-rental-1pl5awonj-nickemma.vercel.app/",
+      linkToSource: "https://github.com/nickemma/car-rental-app",
     },
     {
-      name: "Destructors e-commerce",
+      name: "Destructors E-commerce",
       description:
-        "'Destructors E-commerce' is a digital platform that enables seamless online sales of products or services, offering customers a secure and convenient shopping experience.",
-      techs: ["React & Redux", "Tailwind CSS", "NodeJs"],
+        "Welcome to our E-commerce website, where shopping meets convenience and affordability. ensuring the safety and security of your personal and payment information using the latest security measures and encryption technology to safeguard your data and protect your privacy and we offers a seamless shopping experience.",
+
+      techs: ["React & Redux", "Typescript", "GraphQL", "Firebase", "Sass"],
       image: ecommerce,
-      linkToLiveVersion:
-        "https://destructors-ec-fe-git-toast-fix-signup-destructors.vercel.app/",
-      linkToSource: "https://github.com/atlp-rwanda/destructors-ec-fe",
+      linkToLiveVersion: "https://multi-crown-clothing.netlify.app/",
+      linkToSource: "https://github.com/nickemma/multi-clothing-shop",
     },
 
     {
       name: "Space Travellers",
       description:
         '"Space Travelers" is a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.',
-      techs: ["React & Redux", "CSS3"],
+      techs: ["React & Redux", "TailwindCss", "Unit Testing"],
       image: space,
-      linkToLiveVersion: "https://frolicking-bienenstitch-f9dcce.netlify.app/",
-      linkToSource: "https://github.com/aliatayee/Space-Travelers-Hub",
+      linkToLiveVersion: "https://microverse-space-hub.netlify.app/",
+      linkToSource: "https://github.com/nickemma/space-hub",
     },
     {
       name: "Monishare frontend / Monishare backend ",
       description:
-        '"Monishare frontend"  this was a team project for the car booking app for a renter and a rentee at the same time / "Monishare backend" where we  created APIs to be consumed in  Monishare front-end',
+        '"Monishare frontend"  this was a team project for the car booking app for a renter and a rentee at the same time / "Monishare backend" where we created APIs to be consumed in  Monishare front-end',
       techs: [
         "React",
         "Tailwind CSS",
@@ -68,21 +75,20 @@ const Portfolio = ({ menu }) => {
       name: "Get the best meals",
       description:
         "`Get the best meals` is a simple Vanilla JS website for reserving meals where a user can make reservations, add comments & likes or just get details about meals that they like",
-      techs: ["HTML", "CSS3", "JavaScript"],
+      techs: ["HTML", "CSS3", "JavaScript", "MealDB API"],
       image: meals,
       linkToLiveVersion:
         "https://divinecharlotte.github.io/javascript-capstone/",
       linkToSource: "https://github.com/divinecharlotte/javascript-capstone",
     },
     {
-      name: "DCD fashion page",
+      name: "Summer BootCamp",
       description:
-        "`DCD fashion` is based on an annually worldwide. It's an extravaganza of concerts, arts and other fun fashion related activities. Users can use this website to checkout the different activities available and get to know the rich history behind modeling",
+        "`Summer BootCamp` is based on an annually organized boot camp for students to learn and improve their coding skills. It is a simple website that allows students to register for the boot camp, view the boot camp schedule, and get more information about the boot camp.",
       techs: ["CSS", "HTML", "JavaScript"],
       image: js,
-      linkToLiveVersion:
-        "https://divinecharlotte.github.io/divnecharlotte.github.io/",
-      linkToSource: "https://github.com/divinecharlotte/capstoneproject1",
+      linkToLiveVersion: "https://nickemma.github.io/capstone-project-1/",
+      linkToSource: "https://github.com/nickemma/capstone-project-1",
     },
   ]);
 
