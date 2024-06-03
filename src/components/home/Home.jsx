@@ -3,7 +3,7 @@ import { AiOutlineLinkedin, AiOutlineTwitter } from "react-icons/ai";
 import { FaGithub, FaMedium } from "react-icons/fa";
 import Typed from "typed.js";
 import "./home.scss";
-import logo from "../../assets/images/techie.jpeg";
+import logo from "../../assets/images/techie3.png";
 import BgCanvas from "../bg-canvas/BgCanvas";
 import PropTypes from "prop-types";
 
