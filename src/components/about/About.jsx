@@ -22,7 +22,7 @@ const About = ({ menu }) => {
                 <h3 data-aos="fade-in">
                   I&apos;m Nicholas Emmanuel C, a
                   {' '}
-                  <span>Software Developer</span>
+                  <span>Software Engineer</span>
                 </h3>
                 <p data-aos="fade-in">
                   I&apos;m a resourceful problem-solver with a keen analytical mindset and a drive for excellence. Additionally, I possess strong organizational and

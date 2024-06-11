@@ -23,13 +23,7 @@ const Portfolio = ({ menu }) => {
       description:
         "'RentMe' is a car rental agencies which serves people who require a temporary vehicle, It allow users to create an account,and book a car for a specific period of time. view all available Options, and view all bookings made by a specific user.",
 
-      techs: [
-        "React & Redux",
-        "TailwindCss",
-        "Ruby on Rails",
-        "Framer Motion",
-        "SwiperJs",
-      ],
+      techs: ["React & Redux", "TailwindCss", "Ruby on Rails", "Framer Motion"],
       image: bookme,
       linkToLiveVersion: "https://car-rental-1pl5awonj-nickemma.vercel.app/",
       linkToSource: "https://github.com/nickemma/car-rental-app",
@@ -58,14 +52,7 @@ const Portfolio = ({ menu }) => {
       name: "Monishare frontend / Monishare backend ",
       description:
         '"Monishare frontend"  this was a team project for the car booking app for a renter and a rentee at the same time / "Monishare backend" where we created APIs to be consumed in  Monishare front-end',
-      techs: [
-        "React",
-        "Tailwind CSS",
-        "TypeScript ",
-        "NestJs",
-        "NodeJs",
-        "Docker",
-      ],
+      techs: ["NestJs", "Tailwind CSS", "TypeScript ", "NodeJs", "Docker"],
       image: moni,
       linkToLiveVersion:
         "http://staging.violet.monishare.ojemba.s3-website.eu-central-1.amazonaws.com/",

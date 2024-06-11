@@ -14,7 +14,7 @@ const Home = ({ menu }) => {
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
-        "MERN Developer",
+        "Software Engineer",
         "Penetration Tester",
         "Golang Developer",
         "CyberSecurity Enthusiast",
