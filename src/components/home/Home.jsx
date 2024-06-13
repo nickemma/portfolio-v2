@@ -15,7 +15,7 @@ const Home = ({ menu }) => {
     const typed = new Typed(el.current, {
       strings: [
         "Software Engineer",
-        "Penetration Tester",
+        "Frontend Developer",
         "Golang Developer",
         "CyberSecurity Enthusiast",
       ], // Strings to display
