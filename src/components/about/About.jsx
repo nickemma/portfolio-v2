@@ -118,14 +118,14 @@ const About = ({ menu }) => {
                     <h3>Golang</h3>
                     <div className="progress">
                       <div className="progress-in" style={{ width: "82%" }} />
-                      <div className="skill-percent">82%</div>
+                      <div className="skill-percent">70%</div>
                     </div>
                   </div>
                   <div className="skill-item" data-aos="fade-in">
-                    <h3>Penetration/API testing</h3>
+                    <h3>Python</h3>
                     <div className="progress">
                       <div className="progress-in" style={{ width: "75%" }} />
-                      <div className="skill-percent">75%</div>
+                      <div className="skill-percent">80%</div>
                     </div>
                   </div>
                 </div>
