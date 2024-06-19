@@ -15,9 +15,9 @@ const Home = ({ menu }) => {
     const typed = new Typed(el.current, {
       strings: [
         "Software Engineer",
-        "Frontend Developer",
+        "Python Developer",
         "Golang Developer",
-        "CyberSecurity Enthusiast",
+        "AI/ML Enthusiast",
       ], // Strings to display
       // Speed settings, try different values until you get good results
       typeSpeed: 100,
