@@ -12,8 +12,8 @@
 
     .about-text {
       h3 {
-        font-size: 24px;
-        margin-bottom: 15px;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
         font-weight: 700;
         color: $text-black-900;
 
@@ -23,121 +23,107 @@
       }
 
       p {
-        font-size: 16px;
+        font-size: 1rem;
         line-height: 25px;
         color: $text-black-700;
+        margin-bottom: 0.75rem;
 
         @include mq("sm", "max") {
-          font-size: 12px;
+          font-size: 0.75rem;
         }
       }
 
       flex: 0 0 100%;
       max-width: 100%;
     }
-
-    .personal-info {
-      flex: 0 0 60%;
-      max-width: 60%;
-      margin-top: 80px;
+    
+    .buttons {
+      margin-top: 30px;
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
 
       @include mq("lg", "max") {
-        flex: 0 0 100%;
+        width: 100%;
+      }
+
+      @include mq("md", "max") {
+        flex-direction: column;
+        align-items: center;
         max-width: 100%;
       }
 
-      .info-item {
-        flex: 0 0 45%;
-        max-width: 45%;
-        margin-right: 5px;
-
-        @include mq("lg", "max") {
-          flex: 0 0 50%;
-          max-width: 50%;
-          margin-right: 0;
-        }
+      .btn {
+        margin-top: 10px;
 
         @include mq("sm", "max") {
-          flex: 0 0 100%;
-          max-width: 100%;
-          text-align: center;
-        }
-
-        p {
-          font-weight: 600;
-          padding: 10px 0;
-          font-size: 16px;
-          word-wrap: break-word;
-          color: $text-black-900;
-          border-bottom: 1px solid $bg-black-50;
-
-          @include mq("sm", "max") {
-            font-size: 12px;
-          }
-
-          span {
-            font-weight: normal;
-            color: $text-black-700;
-            margin-left: 5px;
-            display: inline-block;
-
-            @include mq("sm", "max") {
-              font-size: 12px;
-            }
-
-            @include mq("xl", "max") {
-              display: block;
-            }
-          }
-        }
-      }
-
-      .buttons {
-        margin-top: 30px;
-        width: 90%;
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-
-        @include mq("lg", "max") {
-          width: 100%;
-        }
-
-        @include mq("md", "max") {
-          flex-direction: column;
-          align-items: center;
-          max-width: 100%;
-        }
-
-        .btn {
-          margin-top: 10px;
-
-          @include mq("sm", "max") {
-            font-size: 12px;
-          }
+          font-size: 12px;
         }
       }
     }
 
+    .my-skills {
+      margin-top: 4rem;
+
+      h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: $text-black-900;
+        margin-bottom: 1.8rem;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 25px;
+        color: $text-black-700;
+        margin-bottom: 1.5rem;
+      }
+  }
+
     .skills {
-      margin-top: 80px;
+      margin-top: 2.5rem;
       flex: 0 0 40%;
-      max-width: 40%;
 
       @include mq("lg", "max") {
         flex: 0 0 100%;
         max-width: 100%;
       }
 
+      @include mq("sm", "max") {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .row-skill {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        position: relative;
+        justify-content: space-between;
+
+        @include mq("sm", "max") {
+          flex-direction: column;
+          align-items: normal;
+          gap: 0.25rem;
+        }
+      }
+
       .skill-item {
-        flex: 0 0 100%;
-        max-width: 100%;
-        margin-bottom: 25px;
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+
+        svg {
+          color: $text-skin;
+          font-size: 20px;
+        }
 
         h3 {
           line-height: 40px;
-          font-weight: 600;
-          font-size: 16px;
+          font-weight: 700;
+          font-size:1rem;
           color: $text-black-900;
           text-transform: capitalize;
 
@@ -145,44 +131,30 @@
             font-size: 14px;
           }
         }
-
-        .progress {
-          background-color: $bg-black-50;
-          height: 7px;
-          border-radius: 4px;
-          width: 100%;
-          position: relative;
-
-          @include mq("sm", "max") {
-            font-size: 14px;
-          }
-
-          .progress-in {
-            position: absolute;
-            left: 0;
-            top: 0;
-            height: 100%;
-            border-radius: 4px;
-            background-color: $text-skin;
-          }
-        }
-
-        .skill-percent {
-          position: absolute;
-          right: 0;
-          color: $text-black-900;
-          top: -40px;
-          font-weight: 400;
-          line-height: 40px;
-        }
       }
     }
 
-    .title {
-      font-size: 24px;
-      margin-bottom: 30px;
-      font-weight: 700;
-      color: $text-black-900;
+    .my-experience {
+      text-align: center;
+      margin-top: 5rem;
+
+      h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: $text-black-900;
+        margin-bottom: 1.8rem;
+        
+        span {
+          color: $text-skin;
+        }
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 25px;
+        color: $text-black-700;
+        margin-bottom: 1.5rem;
+      }
     }
 
     .timeline-box {
@@ -226,9 +198,32 @@
             background-color: $text-skin;
           }
 
+          .expert {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 0.25rem;
+
+            @include mq("sm", "max") {
+              flex-direction: column;
+              align-items: normal;
+              gap: 0.25rem;
+            }
+
+            h4 {
+              font-weight: 700;
+              font-size: 19px;
+              color: $text-black-900;
+
+              @include mq("sm", "max") {
+                font-size: 14px;
+              }
+            }
+          }
+
           .timeline-title {
-            font-weight: 700;
-            font-size: 18px;
+            font-weight: 400;
+            font-size: 16px;
             margin-bottom: 15px;
             text-transform: capitalize;
             color: $text-black-900;
@@ -243,10 +238,22 @@
             font-size: 16px;
             text-align: justify;
             color: $text-black-700;
+            margin-bottom: 1rem;
+            position: relative;
+
+            span {
+              color: $text-skin;
+            }
 
             @include mq("sm", "max") {
               font-size: 12px;
             }
+          }
+
+          .link {
+            color: $text-skin;
+            font-weight: 700;
+            font-size: 14px;
           }
 
           .timeline-date {

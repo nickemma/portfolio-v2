@@ -3,7 +3,6 @@ import "./portfolio.scss";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import js from "../../assets/images/jsreal1.png";
-import meals from "../../assets/images/mealswbst.png";
 import space from "../../assets/images/spacetravel.png";
 import moni from "../../assets/images/moni.png";
 import bookme from "../../assets/images/bookme.png";
@@ -59,16 +58,6 @@ const Portfolio = ({ menu }) => {
       linkToBackend: "http://3.66.182.10:3000/api",
     },
     {
-      name: "Get the best meals",
-      description:
-        "`Get the best meals` is a simple Vanilla JS website for reserving meals where a user can make reservations, add comments & likes or just get details about meals that they like",
-      techs: ["HTML", "CSS3", "JavaScript", "MealDB API"],
-      image: meals,
-      linkToLiveVersion:
-        "https://divinecharlotte.github.io/javascript-capstone/",
-      linkToSource: "https://github.com/divinecharlotte/javascript-capstone",
-    },
-    {
       name: "Summer BootCamp",
       description:
         "`Summer BootCamp` is based on an annually organized boot camp for students to learn and improve their coding skills. It is a simple website that allows students to register for the boot camp, view the boot camp schedule, and get more information about the boot camp.",
@@ -109,7 +98,12 @@ const Portfolio = ({ menu }) => {
           </div>
           <div className="row">
             <div className="portfolio-heading padd-15">
-              <h2>My Latest Projects: </h2>
+              <h2>What I&apos; been working on </h2>
+              <p className="portfolio-text">
+                I like to stay busy and always have a project in the works.
+                <br /> Take a look at some of the applications, articles <br />
+                and companies I&apos;ve dedicated my time to.
+              </p>
             </div>
           </div>
           <div className="projects">

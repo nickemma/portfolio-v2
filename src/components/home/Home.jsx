@@ -13,12 +13,7 @@ const Home = ({ menu }) => {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: [
-        "Software Engineer",
-        "Python Developer",
-        "Golang Developer",
-        "AI/ML Enthusiast",
-      ], // Strings to display
+      strings: ["Software Engineer", "CS/AL Student", "Minimalist Developer"], // Strings to display
       // Speed settings, try different values until you get good results
       typeSpeed: 100,
       backSpeed: 60,
@@ -76,19 +71,26 @@ const Home = ({ menu }) => {
           <div className="row">
             <div className="home-info padd-15">
               <h3 className="hello">
-                Hey there, I&apos;m{" "}
-                <span className="name">Nicholas Emmanuel</span>
+                Hi there, I&apos;m{" "}
+                <span className="name">Nicholas Emmanuel.</span>
               </h3>
               <h3 className="my-profession">
-                I&apos;m a <span className="typing" ref={el} />
+                A <span className="typing" ref={el} />
               </h3>
               <p>
-                I&apos;m passionate about crafting digital experiences that make
-                a difference. Take a look at some of my projects and expertise.
-                I&apos;m here to bring your ideas to life! If you&apos;re
-                looking for a dedicated software developer to collaborate on
-                your next project, let&apos;s connect and create something
-                amazing together.
+                I&apos;m a student at University of the people currently
+                studying computer science and Artificial Intelligence.
+              </p>
+              <p>
+                As I&apos;ve grown as a developer, I&apos;ve worked alongside
+                senior designers and developers who have raised my standards for
+                what&apos;s expected of any web application.
+              </p>
+              <p>
+                Through these experiences, i&apos;ve had the opportunity to
+                create memorable products that are not only enjoyable to use,
+                but are written in code that&apos;s maintainable, scalable and
+                easy to understand.
               </p>
 
               <button
@@ -108,7 +110,7 @@ const Home = ({ menu }) => {
               </button>
             </div>
             <div className="home-img padd-15">
-              <img src={logo} alt="" />
+              <img src={logo} alt="myself" />
             </div>
           </div>
         </div>
