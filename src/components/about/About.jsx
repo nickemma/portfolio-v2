@@ -21,14 +21,15 @@ const About = ({ menu }) => {
             <div className="row">
               <div className="about-text">
                 <h3 data-aos="fade-in">
-                  I&apos;m Nicholas Emmanuel. A <span>Software Engineer</span>
+                  I&apos;m Nicholas Emmanuel. A{" "}
+                  <span>Software Engineer Nerd</span>
                 </h3>
                 <p data-aos="fade-up">
-                  I&apos;m a passionate introvert who loves building things with
-                  code.
+                  I&apos;m passionate introvert and software engineer nerd who
+                  loves building things with code.
                 </p>
                 <p data-aos="fade-right">
-                  My first experience with programming was in mid 2020, but I
+                  My first experience with programming was in mid 2021, but I
                   didn&apos;t last long: I was a big fan of computer-animated TV
                   shows, games and graphics, so I decided I wanted to do
                   “Computer Programming”. I started learning Python and
@@ -46,12 +47,12 @@ const About = ({ menu }) => {
                 </p>
                 <p data-aos="fade-right">
                   Since then, I&apos;ve been honing my skills and learning
-                  Javascript. I recently graduated from Microverse a 7-month
+                  Javascript. I recently graduated from Microverse a 10-month
                   intensive Web Development Bootcamp program, where I
                   collaborated with talented developers worldwide, often
                   engaging in pair programming sessions. I&apos;m seeking a
-                  full-time role where I can help a company achieve their
-                  🌎goals.
+                  full-time role where I can contribute to achieving a
+                  company&apos;s 🌎 goals.
                 </p>
               </div>
               <div data-aos="flip-up" className="buttons">
@@ -75,13 +76,10 @@ const About = ({ menu }) => {
                 Apart from the courses included in my degree, I&apos;ve taken a
                 number of online courses such as{" "}
                 <strong>
-                  The Complete Javascript Course, The Joy Of React, 100 Days Of
-                  Python,
+                  You Don&apos;t Know JS, The Joy Of React, 100 Days Of Python,
                 </strong>{" "}
-                and I&apos;m currently taking{" "}
-                <strong>
-                  Full-Time Go Developer, DSA, Complete MERN Stack
-                </strong>
+                and I&apos;m currently Learning{" "}
+                <strong>Java/Spring Boot, DSA, and System Design.</strong>
               </p>
             </div>
             <div className="skills padd-15">
@@ -180,7 +178,7 @@ const About = ({ menu }) => {
                   >
                     <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"></path>
                   </svg>
-                  <h3>Golang</h3>
+                  <h3>SpringBoot</h3>
                 </div>
               </div>
               <div className="row-skill">

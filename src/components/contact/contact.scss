@@ -52,6 +52,11 @@
     margin: 1rem 0;
     transition: all .3s ease-in-out;
 
+     &:hover {
+      background: #363636;
+      transform: translateY(-5px);
+    }
+    
     img {
       height: 40px;
       margin: 0 .7rem;

@@ -13,7 +13,12 @@ const Home = ({ menu }) => {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["Software Engineer", "CS/AL Student", "Minimalist Developer"], // Strings to display
+      strings: [
+        "Software Engineer Nerd",
+        "CS/AL Student",
+        "Passionate Coder",
+        "Minimalist Developer",
+      ], // Strings to display
       // Speed settings, try different values until you get good results
       typeSpeed: 100,
       backSpeed: 60,
