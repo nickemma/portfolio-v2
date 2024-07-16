@@ -40,6 +40,7 @@ const Home = ({ menu }) => {
               target="_blank"
               href="https://github.com/nickemma"
               rel="noreferrer"
+              aria-label="GitHub profile"
             >
               <FaGithub />
             </a>
@@ -49,6 +50,7 @@ const Home = ({ menu }) => {
               target="_blank"
               href="https://www.linkedin.com/in/techieemma/"
               rel="noreferrer"
+              aria-label="LinkedIn profile"
             >
               <AiOutlineLinkedin />
             </a>
@@ -58,6 +60,7 @@ const Home = ({ menu }) => {
               target="_blank"
               href="https://medium.com/@nicholasemmanuel321"
               rel="noreferrer"
+              aria-label="Medium profile"
             >
               <FaMedium />
             </a>
@@ -67,6 +70,7 @@ const Home = ({ menu }) => {
               target="_blank"
               href="https://twitter.com/techieEmma"
               rel="noreferrer"
+              aria-label="Twitter profile"
             >
               <AiOutlineTwitter />
             </a>
@@ -115,7 +119,7 @@ const Home = ({ menu }) => {
               </button>
             </div>
             <div className="home-img padd-15">
-              <img src={logo} alt="myself" />
+              <img src={logo} alt="Techie Emma" loading="lazy" />
             </div>
           </div>
         </div>
