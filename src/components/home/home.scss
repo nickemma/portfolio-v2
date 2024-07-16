@@ -79,6 +79,11 @@ button {
   font-size: 28px;
   margin: 15px 0;
   word-spacing: 2px;
+
+  @include mq("sm", "max") {
+      font-size: 17px;
+      margin-top: 2.5rem;
+    }
 }
 
 .hello span {
@@ -86,6 +91,10 @@ button {
   font-size: 30px;
   font-weight: 700;
   color: $text-skin;
+
+  @include mq("sm", "max") {
+      font-size: 19px;
+    }
 }
 
 .my-profession {
