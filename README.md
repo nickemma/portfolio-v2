@@ -4,12 +4,12 @@
 <br />
 <div align="center">
   <a href="https://buggo.vercel.app/">
-    <img src="public/myLogo.png" alt="portfolio-logo" height="80">
+    <img src="public/mylogo.png" alt="portfolio-logo" height="80">
   </a>
 
   <h5 align="center">
     <br />
-    <a href="https://coming soon/" target="_blank">View Live</a>
+    <a href="https://techieemma.me/" target="_blank">View Live</a>
     |
     <a href="https://github.com/nickemma/portfolio-v2/issues/new" target="_blank">Report Bug</a>
     |
@@ -50,7 +50,7 @@
 This website serves as a collection of my most recent, expertly crafted, and innovative projects as well as a base of knowledge concerning the about of the creator... Nicholas Emmanuel.
 
 <div align="center">
-  <img  width="1000" alt="buggo-screenshot" src="./assets/hero-screenshot.webp">
+  <img  width="1000" alt="screenshot" src="./src/assets/images/moni.png">
 </div>
 
 #### Built With
