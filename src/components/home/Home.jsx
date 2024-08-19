@@ -87,8 +87,8 @@ const Home = ({ menu }) => {
                 A <span className="typing" ref={el} />
               </h3>
               <p>
-                I&apos;m a student at University of the people currently
-                studying computer science and Artificial Intelligence.
+                I&apos;m a college student at Coventry University currently
+                studying Computer Science with Artificial Intelligence.
               </p>
               <p>
                 As I&apos;ve grown as a developer, I&apos;ve worked alongside
