@@ -21,15 +21,14 @@ const About = ({ menu }) => {
             <div className="row">
               <div className="about-text">
                 <h3 data-aos="fade-in">
-                  I&apos;m Nicholas Emmanuel. A{" "}
-                  <span>Software Engineer Nerd</span>
+                  I&apos;m Nicholas Emmanuel. A <span>Software Engineer</span>
                 </h3>
                 <p data-aos="fade-up">
-                  I&apos;m passionate introvert and software engineer nerd who
-                  loves building things with code.
+                  I&apos;m passionate introvert and software engineer who loves
+                  building things with code.
                 </p>
                 <p data-aos="fade-right">
-                  My first experience with programming was in mid 2021, but I
+                  My first experience with programming was in late 2021, but I
                   didn&apos;t last long: I was a big fan of computer-animated TV
                   shows, games and graphics, so I decided I wanted to do
                   “Computer Programming”. I started learning Python and
@@ -37,7 +36,7 @@ const About = ({ menu }) => {
                   same time.
                 </p>
                 <p data-aos="fade-up">
-                  A year later, I decided to try a coding Bootcamp. It was a
+                  Few months later, I decided to try a coding Bootcamp. It was a
                   radically different experience. I distinctly remember the
                   moment it clicked; I was watching The Social Dilemma, and they
                   were talking about how the algorithms were designed to keep
@@ -47,8 +46,8 @@ const About = ({ menu }) => {
                 </p>
                 <p data-aos="fade-right">
                   Since then, I&apos;ve been honing my skills and learning
-                  Javascript. I recently graduated from Microverse a 10-month
-                  intensive Web Development Bootcamp program, where I
+                  Javascript. I recently graduated from Microverse a 10-12
+                  months intensive Web Development Bootcamp program, where I
                   collaborated with talented developers worldwide, often
                   engaging in pair programming sessions. I&apos;m seeking a
                   full-time role where I can contribute to achieving a
@@ -79,7 +78,7 @@ const About = ({ menu }) => {
                   You Don&apos;t Know JS, The Joy Of React, 100 Days Of Python,
                 </strong>{" "}
                 and I&apos;m currently Learning{" "}
-                <strong>Java/Spring Boot, DSA, and System Design.</strong>
+                <strong>Spring Boot, and Machine Learning.</strong>
               </p>
             </div>
             <div className="skills padd-15">
@@ -357,7 +356,7 @@ const About = ({ menu }) => {
                           <h4>TaaleemGate</h4>
                           <h3 className="timeline-date">
                             <BsCalendar2Date className="fa fa-calendar" />
-                            <i>June 2022 - Sep 2023</i>
+                            <i>June 2022 - Oct 2023</i>
                           </h3>
                         </div>
                         <h4 className="timeline-title">Frontend Engineer</h4>
@@ -406,7 +405,7 @@ const About = ({ menu }) => {
                           <h4>Xoommit</h4>
                           <h3 className="timeline-date">
                             <BsCalendar2Date className="fa fa-calendar" />
-                            <i> Nov 2021 - June 2022</i>
+                            <i> Aug 2022 — Feb 2023</i>
                           </h3>
                         </div>
                         <h4 className="timeline-title">

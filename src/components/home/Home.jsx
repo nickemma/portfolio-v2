@@ -14,10 +14,10 @@ const Home = ({ menu }) => {
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
-        "Software Engineer Nerd",
-        "CS/AL Student",
-        "Passionate Coder",
-        "Minimalist Developer",
+        "Software Engineer",
+        "CS/AI Student at SFBU",
+        "Co-Founder of NeoCareSphere",
+        "Tech Advocate for Social Good",
       ], // Strings to display
       // Speed settings, try different values until you get good results
       typeSpeed: 100,
@@ -87,19 +87,21 @@ const Home = ({ menu }) => {
                 A <span className="typing" ref={el} />
               </h3>
               <p>
-                I&apos;m a college student at Coventry University currently
-                studying Computer Science with Artificial Intelligence.
+                I&apos;m a student at San Francisco Bay University, currently
+                pursuing a degree in Computer Science with a focus on Artificial
+                Intelligence
               </p>
               <p>
-                As I&apos;ve grown as a developer, I&apos;ve worked alongside
-                senior designers and developers who have raised my standards for
-                what&apos;s expected of any web application.
+                As I&apos;ve evolved as a developer, I&apos;ve had the
+                incredible opportunity to collaborate with seasoned designers
+                and expert developers. Their mentorship has not only inspired me
+                but also redefined my understanding of excellence in web
+                application development.
               </p>
               <p>
-                Through these experiences, i&apos;ve had the opportunity to
-                create memorable products that are not only enjoyable to use,
-                but are written in code that&apos;s maintainable, scalable and
-                easy to understand.
+                This exposure has sharpened my standards and ignited my passion
+                for creating exceptional digital experiences that truly resonate
+                with users.
               </p>
 
               <button
