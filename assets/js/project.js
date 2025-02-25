@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                           <a href="${project.links.demo}"  target="_blank"><i class="my-icon icon-eye"></i></a>
                         </li>
                         <li>
-                         <a href="${project.links.github}"><i class="fa-brands fa-github"></i></a>
+                         <a href="${project.links.github}" target="_blank"><i class="fa-brands fa-github"></i></a>
                         </li>
             </ul>
           </div>
