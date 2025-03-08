@@ -28,16 +28,6 @@
       }
     }, 
     {
-      "title": "Destructors E-commerce",
-      "date": "2023",
-     "image": "assets/projectImage/ecommerce.png",
-      "tech": ["React", "Redux", "Typescript", "stripe", "Apollo Client"],
-      "links": {
-        "demo": "https://multi-crown-clothing.netlify.app/",
-        "github": "https://github.com/nickemma/multi-clothing-shop"
-      }
-    },
-    {
       "title": "Bug Tracker",
      "image": "assets/projectImage/buggo.webp",
       "tech": ["React", "Node.js", "Typescript", "Pusher", "MongoDB"],
