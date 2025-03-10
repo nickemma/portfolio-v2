@@ -1,758 +1,428 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <!-- Essential Meta Tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <!-- Primary SEO Meta Tags -->
-    <title>Nicholas Emmanuel | Backend & Cloud Engineer </title>
-    <meta name="description"
-      content="Cloud-native solutions architect specializing in React, AWS, and AI integration. Building scalable systems with 4 years of production experience.">
-    <meta name="keywords"
-      content="Backend Developer, AWS Certified, Cloud Engineer, React Expert, Golang Developer, AI Integration, Software Engineer">
-    <meta name="author" content="Nicholas Emmanuel">
 
-    
-    <!-- Apple Favicon -->
-    <link rel="apple-touch-icon" href="/assets/img/favicon.svg" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- All Device Favicon -->
-    <link rel="icon" href="/assets/img/logo.svg" />
-    <!-- Icon -->
-    <link rel="stylesheet" href="/assets/all-icons/myicon.css" />
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
-    <!-- Plugin -->
-    <link rel="stylesheet" href="/assets/css/plugins.css" />
-    <!-- Style -->
-    <link rel="stylesheet" href="/assets/css/style.min.css" />
-    <!-- Responsive -->
-    <link rel="stylesheet" href="/assets/css/responsive.min.css" />
-  </head>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<title>Nicholas Emmanuel</title>
+	<!-- Favicon -->
+	<link href="assets/images/logo.svg" rel="shortcut icon">
+	<!-- CSS -->
+	<link href="assets/plugins/bootstrap/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/plugins/magnific-popup/magnific-popup.min.css" rel="stylesheet">
+	<link href="assets/plugins/swiper/swiper-bundle.min.css" rel="stylesheet">
+	<link href="assets/css/theme.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+	<!-- Fonts/Icons -->
+	<link href="assets/plugins/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+	<link href="assets/plugins/fontawesome/css/all.css" rel="stylesheet">
+</head>
 
-  <body class="font-v3">
-    <div id="root">
-      <header>
-        <!-- Menu Bar Start -->
-        <div class="menu-bar v2">
-          <div class="container">
-            <div class="menu-bar-content">
-              <div class="menu-logo">
-                <a href="index.html">
-                  <img src="/assets/img/logo.svg" alt="logo" />
-                </a>
-              </div>
-              <div class="menu-right">
-                <nav class="main-menu">
-                  <ul>
-                    <li><a href="#" class="section-link">Home</a></li>
-                    <li>
-                      <a href="#about-us" class="section-link">About Me</a>
-                    </li>
-                    <li><a href="#project" class="section-link">Work</a></li>
-                    <li><a href="#contact" class="section-link">Contact</a></li>
-                  </ul>
-                </nav>
-                <div class="mobile-menu-bar">
-                  <div class="mobile-menu-header">
-                    <div class="mobile-logo">
-                      <a href="index.html">
-                        <img src="/assets/img/logo.svg" alt="logo" />
-                      </a>
-                    </div>
-                    <button class="close-mobile-btn">
-                      <i class="my-icon icon-close"></i>
-                    </button>
-                  </div>
-                  <div class="mobile-content">
-                    <iframe
-                      class="w-map"
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.58567877872!2d3.3792!3d6.5244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8ec4a7e7e3e1%3A0xdd9d8a8d2f4d5d9c!2sLagos!5e0!3m2!1sen!2sng!4v1658975678901!5m2!1sen!2sng"
-                      loading="lazy"
-                    ></iframe>
-                    <div class="w-address">
-                      <ul>
-                        <li>
-                          <i class="my-icon icon-location-dot"></i>
-                          <p class="text-para-2 text-para-xl-1">
-                            Ikeja, Lagos 100001, <br />Nigeria
-                          </p>
-                        </li>
-                        <li>
-                          <i class="my-icon icon-call"></i>
-                          <p class="text-para-2 text-para-xl-1">
-                            <a href="tel:+2349163198026">+(234) 916 319 8026</a>
-                          </p>
-                        </li>
-                        <li>
-                          <i class="my-icon icon-envelope-solid"></i>
-                          <p class="text-para-2 text-para-xl-1">
-                            <a href="mailto:nicholasemmanuel321@gmail.com"
-                              >techieemma@gmail.com</a
-                            >
-                          </p>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <ul class="social-link">
-                    <li><a href="https://github.com/nickemma" target="_blank">
-                            <i class="fa-brands fa-github"></i>
-                        </a></li>
-                    <li>
-                      <a href="https://twitter.com/techieEmma" target="_blank"
-                        ><i class="fa-brands fa-twitter"></i></a>
-                    </li>
-                    <li><a href="https://medium.com/@nicholasemmanuel321" target="_blank">
-                            <i class="fa-brands fa-medium"></i>
-                        </a></li>
-                    <li>
-                      <a href="https://www.linkedin.com/in/techieemma/" target="_blank"
-                        ><i class="my-icon icon-linkedin-in"></i
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-                <button class="mobile-menu-btn">
-                  <span></span> <span></span> <span></span>
-                </button>
-              </div>
-            </div>
+<body data-preloader="true">
+
+	<!-- Cursor -->
+	<div id="cursor"></div>
+	<!-- end Cursor -->
+
+	<!-- Header -->
+	<div class="header">
+		<div class="container-fluid">
+			<div class="header-wrapper">
+				<!-- Header Logo -->
+				<div class="header-logo">
+					<h2>NE</h2>
+				</div>
+				<!-- Header Nav -->
+				<div class="header-nav">
+					<a class="button button-sm button-dot me-2 me-lg-3" href="#contact">
+						<span data-text="Let's Talk">Let's Talk</span>
+					</a>
+					<!-- Nav Menu Toggle -->
+					<button id="nav-toggle" class="button button-sm button-dot button-white">
+						<span data-text="Menu">Menu</span>
+					</button>
+					<!-- Nav Menu Box -->
+					<div class="nav-box">
+						<ul class="nav">
+							<li class="nav-item">
+								<a class="nav-link" href="#about"><i class="bi bi-arrow-right"></i>About</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#services"><i class="bi bi-arrow-right"></i>Services</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#portfolio"><i class="bi bi-arrow-right"></i>Portfolio</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#awards"><i class="bi bi-arrow-right"></i>Achievements</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#blog"><i class="bi bi-arrow-right"></i>Blog</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#contact"><i class="bi bi-arrow-right"></i>Contact</a>
+							</li>
+						</ul>
+					</div>
+				</div><!-- end header-nav -->
+			</div><!-- end header-wrapper -->
+		</div><!-- end container -->
+	</div>
+	<!-- end Header -->
+
+	<main data-bs-spy="scroll" data-bs-target=".nav-box">
+
+		<!-- Hero section -->
+		<div id="about" class="hero-section">
+			<div class="container text-center">
+				<div class="row">
+					<div class="col-12">
+						<h1 class="hero-heading display-1 fw-bold mb-0 stroke-text">NICHOLAS EMMANUEL</h1>
+					</div>
+				</div><!-- end row -->
+			</div><!-- end container -->
+		</div>
+		<!-- end Hero section -->
+
+		<!-- About section -->
+		<div class="container">
+			<div class="row g-4 g-md-5">
+				<div class="col-12 col-lg-4 order-lg-2 text-center">
+					<!-- Hero Avatar -->
+					<div class="hero-avatar">
+						<img src="assets/images/techie3.png" alt="">
+					</div>
+					<!-- end Hero Avatar -->
+				</div>
+				<div class="col-12 col-lg-4 order-lg-1">
+					<div class="row g-4 g-lg-5">
+						<div class="col-12 col-md-4 col-lg-12">
+							<h6 class="sm-heading">Biography</h6>
+							<!-- <p>Passionate backend developer with a focus on scalability, security, and efficient
+								systems. I build robust solutions that prioritize performance and user safety.</p> -->
+              <p>Backend Engineer specializing in high-performance systems, scalability, security and secure architectures. with a focus on
+              bridging software engineering with machine learning workflows (MLOps).</p>
+						</div>
+						<div class="col-6 col-md-4 col-lg-12">
+							<h6 class="sm-heading">Skills</h6>
+							<ul class="list-inline-dot">
+								<li>Backend Development</li>
+								<li>APIsecurity</li>
+								<li>Database Optimization</li>
+								<li>Cloud & DevOps</li>
+							</ul>
+						</div>
+						<div class="col-6 col-md-4 col-lg-12">
+							<h6 class="sm-heading">Connect</h6>
+							<ul class="list-inline">
+								<li>
+									<a class="button-circle button-circle-sm" target="_blank"
+										href="https://www.linkedin.com/in/techieemma/">
+										<i class="bi bi-linkedin"></i>
+										<i class="bi bi-linkedin"></i>
+									</a>
+								</li>
+								<li>
+									<a class="button-circle button-circle-sm" target="_blank"
+										href="https://x.com/techieEmma">
+										<i class="bi bi-twitter-x"></i>
+										<i class="bi bi-twitter-x"></i>
+									</a>
+								</li>
+								<li>
+									<a class="button-circle button-circle-sm" target="_blank"
+										href="https://github.com/nickemma">
+										<i class="bi bi-github"></i>
+										<i class="bi bi-github"></i>
+									</a>
+								</li>
+								<li>
+									<a class="button-circle button-circle-sm" target="_blank"
+										href="https://medium.com/@nicholasemmanuel321">
+										<i class="bi bi-medium"></i>
+										<i class="bi bi-medium"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+						
+            <button class="button-resume"
+              href="https://docs.google.com/document/d/1SDUxAOT6aarq1zk_KEDdC8OOtUuZofvE/export?format=pdf" download>
+              <span data-text="Resume ⤓">Resume ⤓</span>
+            </button>
+
+					</div><!-- end row(inner) -->
+				</div>
+				<div class="col-12 col-md-12 col-lg-4 order-lg-3 text-lg-end">
+					<div class="row g-4 g-lg-5">
+						<div class="col-4 col-lg-12">
+							<h6 class="sm-heading">Projects Done</h6>
+							<h1 class="fw-light display-4 mb-0 line-height-110">5+</h1>
+						</div>
+						<div class="col-4 col-lg-12">
+							<h6 class="sm-heading">Years of Experience</h6>
+							<h1 class="fw-light display-4 mb-0 line-height-110">3+</h1>
+						</div>
+						<div class="col-4 col-lg-12">
+							<h6 class="sm-heading">Worldwide Companies</h6>
+							<h1 class="fw-light display-4 mb-0 line-height-110">4</h1>
+						</div>
+					</div><!-- end row(inner) -->
+				</div>
+			</div><!-- end row -->
+		</div><!-- end container -->
+		<!-- end About section -->
+
+		<!-- Services section -->
+		<div id="services" class="section">
+			<div class="container">
+				<div class="row g-4 g-xl-5">
+					<div class="col-12 col-xl-4">
+						<span class="title-heading text-white-04">Services</span>
+						<h1 class="display-3 fw-medium mb-0">What I <span class="text-gradient">Do</span></h1>
+					</div>
+					<div class="col-12 col-xl-8">
+						<div class="row g-4">
+							<!-- Service box 1 -->
+							<div class="col-12">
+								<div class="service-box">
+									<div class="service-order">
+										<h3>01/</h3>
+									</div>
+									<div class="service-title">
+										<i class="bi bi-database-check"></i>
+										<h3>Design</h3>
+									</div>
+									<div class="service-text">
+										<p>Designing efficient backend architectures with the focus on scalability and
+											security.</p>
+									</div>
+								</div>
+							</div>
+							<!-- Service box 2 -->
+							<div class="col-12">
+								<div class="service-box">
+									<div class="service-order">
+										<h3>02/</h3>
+									</div>
+									<div class="service-title">
+										<i class="bi bi-code-slash"></i>
+										<h3>Development</h3>
+									</div>
+									<div class="service-text">
+										<p>Building user-friendly applications with a focus on performance and security.
+										</p>
+									</div>
+								</div>
+							</div>
+							<!-- Service box 3 -->
+							<div class="col-12">
+								<div class="service-box">
+									<div class="service-order">
+										<h3>03/</h3>
+									</div>
+									<div class="service-title">
+										<i class="bi bi-rocket-takeoff"></i>
+										<h3>Shipping</h3>
+									</div>
+									<div class="service-text">
+										<p>Deploying applications seamlessly and efficiently.
+										</p>
+									</div>
+								</div>
+							</div>
+							<!-- end Service box 3 -->
+						</div><!-- end row(inner) -->
+					</div>
+				</div><!-- end row -->
+			</div><!-- end container -->
+		</div>
+		<!-- end Services section -->
+
+		<!-- teck stack -->
+    <!-- Clients Section (Tech Stack) -->
+    <div class="section pt-0">
+      <div class="container">
+        <div class="swiper clients-slider">
+          <div class="swiper-wrapper" id="tech-stack-slider">
+            <!-- Dynamic content will be injected here -->
           </div>
         </div>
-        <!-- Menu Bar End -->
-      </header>
-      <main>
-        <!-- Banner Start -->
-        <section
-          class="banner bg-cover-center v2 pt-50 pb-50 pt-md-70 pb-md-70 pt-lg-100 pb-lg-100 pt-xl-213 pb-xl-213"
-          data-background="assets/img/bg-1.jpg"
-          id="banner"
-        >
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-lg-5 col-xl-4 order-lg-1">
-                <div
-                  class="profile-img wow animate__zoomIn"
-                  data-wow-delay="'0.1s"
-                  data-wow-offset="20"
-                  data-wow-duration="0.8s"
-                >
-                  <img src="/assets/img/profile.png" alt="Nicholas Emmanuel"  />
-              
-                </div>
-              </div>
-              <div class="col-lg-7 col-xl-8">
-                <div class="banner-content">
-                  <h4 class="text-para-2 text-medium">Software Engineer</h4>
-                  <h2 class="text-4 text-capital text-bold">
-                    <span class="text-orange">Nicholas Emmanuel</span>
-                  </h2>
-                  <p class="text-para-1 text-medium">
-                    Backend Engineer specializing in cloud-native applications.
-                    <span class="text-para-2 ">Expertise: Python | AWS | Golang | Microservices | API
-                        Design | MLOps</span>
-                  </p>
-                <div class="d-flex align-items-center justify-content-center justify-content-lg-start gap-4 mb-5">
-                    <div class="badge bg-primary-subtle text-primary">API Security</div>
-                    <div class="badge bg-primary-subtle text-primary">MLOps</div>
-                    <div class="badge bg-primary-subtle text-primary">Database optimization</div>
-                </div>
-
-                  <ul class="all-btns mt-30 mt-xl-50">
-                    <li>
-                      <a
-                        href="/assets/img/nicholas.pdf"
-                        target="_blank" rel="noreferrer"
-                        class="link-anime v3 text-capital round-border-small"
-                        >
-                         <i class="fas fa-download me-2"></i>
-
-                         Resume</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="#project"
-                        class="link-anime v4 text-capital round-border-small"
-                        ><i class="fas fa-code-branch me-2"></i>Projects</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Banner End -->
-        <!-- Fun Facts Start -->
-        <section class="fun-facts v1 pt-50 pt-md-70 pt-xl-100 pt-xxl-130">
-          <div class="container">
-            <ul class="fun-fact-content">
-              <li
-                class="wow animate__fadeInUp"
-                data-wow-delay="0.1s"
-                data-wow-offset="20"
-                data-wow-duration="0.8s"
-              >
-              <div class="icon-box bg-primary-soft">
-                <i class="fas fa-rocket text-primary"></i>
-              </div>
-                <h3 class="text-3 text-semibold">
-                  <span
-                    class="counter"
-                    data-count-min="100"
-                    data-count-max="808"
-                    data-count-duration="1000"
-                    data-count-delay="100"
-                    >10k</span
-                  >+
-                </h3>
-              <p class="text-para-1 text-medium text-capital">Monthly API Requests</p>
-              <small class="text-para-1 text-medium text-capital">Managed via AWS API Gateway</small>
-              </li>
-              <li
-                class="wow animate__fadeInUp"
-                data-wow-delay="0.3s"
-                data-wow-offset="20"
-                data-wow-duration="0.8s"
-              >
-              <div class="icon-box bg-primary-soft">
-                <i class="fas fa-shield-alt text-primary"></i>
-              </div>
-                <h3 class="text-3 text-bold mb-0">Zero</h3>
-                <p class="text-para-1 text-medium text-capital">Critical Vulnerabilities</p>
-                <small class="text-para-1 text-medium text-capital">In production deployments</small>
-              </li>
-              <li
-                class="wow animate__fadeInUp"
-                data-wow-delay="0.5s"
-                data-wow-offset="20"
-                data-wow-duration="0.8s"
-              >
-              <div class="icon-box bg-primary-soft">
-                <i class="fas fa-brain text-primary"></i>
-              </div>
-                <h3 class="text-3 text-semibold">
-                  <span
-                    class="counter"
-                    data-count-min="100"
-                    data-count-max="125"
-                    data-count-duration="1000"
-                    data-count-delay="100"
-                    >3</span
-                  >+
-                </h3>
-                <p class="text-para-1 text-medium text-capital">ML Models Deployed</p>
-                <small class="text-para-1 text-medium text-capital">With CI/CD pipelines</small>
-              </li>
-              <li
-                class="wow animate__fadeInUp"
-                data-wow-delay="0.1s"
-                data-wow-offset="20"
-                data-wow-duration="0.8s"
-              >
-              <div class="icon-box bg-primary-soft">
-                <i class="fas fa-users text-primary"></i>
-              </div>
-                <h3 class="text-3 text-semibold">
-                  <span
-                    class="counter"
-                    data-count-min="100"
-                    data-count-max="1231"
-                    data-count-duration="1000"
-                    data-count-delay="100"
-                    >100</span
-                  >+
-                </h3>
-                <p class="text-para-1 text-medium text-capital">
-                Developers Mentored
-                </p>
-               <small class="text-para-1">Tech Leap Leadership</small>
-
-              </li>
-            </ul>
-            <!-- Supporting Badges -->
-           </div>
-            <div class="expertise-badges mt-60 text-center">
-                <div class="badge bg-primary-soft px-4 py-2 mx-2">Technical Impact</div>
-                <div class="badge bg-primary-soft px-4 py-2 mx-2">3+ Production Deployments</div>
-                <div class="badge bg-primary-soft px-4 py-2 mx-2">Agile Practitioner</div>
-            </div>
-        </section>
-        <!-- Fun Facts End -->
-        <!-- About Start -->
-        <section
-          class="about-us v2 pt-50 pb-50 pt-md-70 pb-md-70 pt-xl-100 pb-xl-100 pb-xxl-130"
-          id="about-us"
-        >
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-lg-6 col-xl-5">
-                <div
-                  class="about-img wow animate__zoomIn" data-wow-delay="0.2s"
-                  data-wow-delay="0.1s"
-                  data-wow-offset="0"
-                  data-wow-duration="0.8s"
-                  >
-                  <img
-                    src="/assets/img/profile-img.png"
-                    alt="profile-img"
-                  />
-                  <div class="tech-badges">
-                    <div class="badge bg-primary-soft wow animate__fadeInUp" data-wow-delay="0.3s">AWS & API security Certified</div>
-                    <div class="badge bg-react shadow wow animate__fadeInDown" data-wow-delay="0.3s">Database Design</div>
-                    <div class="badge bg-golang shadow wow animate__fadeInRight" data-wow-delay="0.3s">Golang Specialist</div>
-                    <div class="badge bg-ai shadow wow animate__fadeInLeft" data-wow-delay="0.3s">AI Integration</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 col-xl-7">
-                <div class="about-content">
-                  <div class="section-title v2 wow animate__fadeInRight">
-                    <h2 class="text-w-2">About Me</h2>
-                    <p class="text-para-1">
-                      Building secure, scalable and efficient systems with 4 years of experience.
-                      Focused on optimizing cloud infrastructure, API design, & maintainable
-                      codebases. Cloud-Native Solutions Architect with production experience in:
-                    </p>
-                  </div>
-
-                  <div class="expertise-grid">
-                    <div class="expertise-card wow animate__flipInX">
-                      <h4 class="d-flex align-items-center gap-2">
-                        <i class="fab fa-aws text-primary"></i>
-                        Cloud Architecture
-                      </h4>
-                      <ul class="text-para-1">
-                        <li class="wow animate__fadeInDown">Lambda Microservices</li>
-                        <li class="wow animate__fadeInUp">ECS Fargate</li>
-                        <li class="wow animate__fadeInLeft">EventBridge</li>
-                        <li class="wow animate__fadeInRight">CloudFormation</li>
-                      </ul>
-                    </div>
-                  
-                    <div class="expertise-card">
-                      <h4 class="d-flex align-items-center gap-2 wow animate__flipInX" data-wow-delay="0.2s">
-                        <i class="fas fa-code text-primary"></i>
-                        Core Development
-                      </h4>
-                      <ul class="text-para-1">
-                        <li class="wow animate__fadeInUp">Go (Gin, Echo)</li>
-                        <li class="wow animate__fadeInRight">TypeScript/Node.js</li>
-                        <li class="wow animate__fadeInDown">PostgreSQL</li>
-                        <li class="wow animate__fadeInLeft">Python</li>
-                      </ul>
-                    </div>
-                  
-                    <div class="expertise-card">
-                      <h4 class="d-flex align-items-center gap-2 wow animate__flipInX" data-wow-delay="0.5s">
-                        <i class="fas fa-shield-alt text-primary"></i>
-                        DevSecOps
-                      </h4>
-                      <ul class="text-para-1">
-                        <li class="wow animate__fadeInRight">CI/CD Pipelines</li>
-                        <li class="wow animate__fadeInDown">OWASP Top 10</li>
-                        <li class="wow animate__fadeInLeft">Prometheus/Grafana</li>
-                        <li class="wow animate__fadeInUp">Trivy Scanning</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- About End -->
-        <!-- Awesome Journey Start -->
-        <section
-          class="awesome-journey v1 pt-50 pb-50 pt-md-70 pb-md-70 pt-xl-100 pb-xl-100 pt-xxl-130 pb-xxl-130"
-        >
-          <div class="container">
-            <div class="section-title-center v2">
-              <h2 class="text-w-2">Technical Journey</h2>
-              <p class="text-para-1">
-                Tracking key milestones from UI development to cloud-based distributed systems architecture and AI/MLOps implementation -
-                chronicling my evolution in building resilient, large-scale software solutions.
-              </p>
-            </div>
-            <ul class="awesome-journey-btns mt-50 mt-xl-60" role="tablist">
-              <li>
-                <button class="tab-btn btn-anime text-capital round-border-small v4 active" id="my-experience-2-tab" data-bs-toggle="tab"
-                  data-bs-target="#my-experience-2">
-                  <i class="fas fa-laptop-code me-2"></i>
-                  Engineering Path
-                </button>
-              </li>
-              <li>
-                <button
-                  class="tab-btn btn-anime text-capital round-border-small v4"
-                  id="my-education-1-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#my-education-1"
-                >
-                <i class="fas fa-graduation-cap me-2"></i>Education
-                </button>
-              </li>
-              <li>
-                <button
-                  class="tab-btn btn-anime text-capital round-border-small v4"
-                  id="awards-3-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#awards-3"
-                >
-                <i class="fas fa-trophy me-2"></i>Recognitions
-                </button>
-              </li>
-            </ul>
-            <div class="tab-content mt-50 mt-xl-60">
-              <img
-                class="shap-img-1"
-                src="/assets/img/object-img-1.png"
-                alt="shap-img-1"
-              />
-              <img
-                class="shap-img-2"
-                src="/assets/img/object-img-2.png"
-                alt="shap-img-2"
-              />
-              <div
-                class="tab-pane fade"
-                id="my-education-1"
-                tabindex="1"
-              >
-                <ul class="journey-cards">
-                  <li
-                    class="wow animate__fadeInUp"
-                    data-wow-delay="0.1s"
-                    data-wow-offset="20"
-                    data-wow-duration="0.8s"
-                  >
-                    <h4 class="text-4">Remote Developer Bootcamp</h4>
-                    <h6 class="text-6 text-orange text-medium">
-                      2022-2023 - Microverse
-                    </h6>
-                    <p class="text-para-1">
-                      Developed skills in remote pair programming using GitHub, industry-standard git-flow, and daily standups. Mastered
-                      algorithms, data structures, and full-stack development.
-                    </p>
-                  </li>
-                  <li
-                    class="wow animate__fadeInUp"
-                    data-wow-delay="0.3s"
-                    data-wow-offset="20"
-                    data-wow-duration="0.8s"
-                  >
-                    <h4 class="text-4">API Security Certification
-</h4>
-                    <h6 class="text-6 text-orange text-medium">
-                      2022-2023 - APISEC University
-                    </h6>
-                    <p class="text-para-1">
-                      A course focused on the core principles of API security, covering best practices for securing web APIs, preventing
-                      common vulnerabilities (e.g., OAuth misconfigurations, API key exposure, injection attacks), and implementing
-                      authentication and authorization mechanisms. 
-                  </li>
-                  <!-- <li
-                    class="wow animate__fadeInUp"
-                    data-wow-delay="0.1s"
-                    data-wow-offset="20"
-                    data-wow-duration="0.8s"
-                  >
-                    <h4 class="text-4">BSc Computer Science</h4>
-                    <h6 class="text-6 text-orange text-medium">
-                      2024-2027 - San Francisco Bay University
-                    </h6>
-                    <p class="text-para-1">
-                      A Undergraduate program that provides a strong foundation in computer science. The program emphasizes hands-on projects,
-                      real-world applications, and industry-relevant AI technologies, preparing graduates for careers in AI research, data
-                      science, and AI-powered software engineering.
-                    </p>
-                      <div class="d-flex flex-wrap gap-2 mt-2">
-                        <span class="badge bg-aws">Cloud Architecture</span>
-                        <span class="badge bg-ai">Machine Learning</span>
-                        <span class="badge bg-react">Advanced Algorithms</span>
-                      </div>
-                  </li> -->
-                  <li class="wow animate__fadeInUp" data-wow-delay="0.1s" data-wow-offset="20" data-wow-duration="0.8s">
-                    <h4 class="text-4">Certifications & Core Competencies</h4>
-                    <h6 class="text-6 text-orange text-medium">
-                      Core Competencies:
-                    </h6>
-                    <p class="text-para-1">
-                      A well-rounded program designed to equip professionals with expertise in **cloud computing, cybersecurity, artificial
-                      intelligence,
-                      and software engineering**. The curriculum emphasizes **secure application development, API security, machine
-                      learning, and
-                      scalable system architecture**
-                    </p>
-                    <div class="d-flex flex-wrap gap-2 mt-2">
-                      <span class="badge bg-aws">
-                        <i class="fab fa-aws text-aws me-2"></i>
-                        AWS Engineer Associate
-                      </span>
-                      <span class="badge bg-ai">
-                        <i class="fas fa-shield-alt text-security me-2"></i>
-                        API Security 
-                      </span>
-                      <span class="badge bg-react">
-                        <i class="fas fa-brain text-ai me-2"></i>
-                        Machine Learning Fundamentals
-                      </span>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div class="tab-pane fade show active" id="my-experience-2" tabindex="1">
-                <ul class="journey-cards">
-                  <li
-                    class="wow animate__fadeInUp"
-                    data-wow-delay="0.1s"
-                    data-wow-offset="20"
-                    data-wow-duration="0.8s"
-                  >
-                    <h4 class="text-4 mb-3">Software Engineer</h4>
-                    <h6 class="text-para-xl-1 text-orange text-medium mb-2">
-                      Atop Web Technologies | May 2023 - Dec 2024
-                    </h6>
-                    <p class="text-para-1">
-                      Engineered 5+ serverless workflows using Firebase Cloud Functions and REST APIs, achieving 70% faster execution
-                      times.
-                      Partnered with a 3-member engineering team to optimize Scorebox's infrastructure, reducing development cycles by 40%
-                      through CI/CD pipeline enhancements. Conducted rigorous testing protocols ensuring 99.9% system uptime.
-                    </p>
-                      <span class="badge bg-firebase">Firebase</span>
-                      <span class="badge bg-rest">REST API</span>
-                      <span class="badge bg-cicd">CI/CD</span>
-                      <span class="badge bg-testing">Testing</span>
-                      <span class="badge bg-aws-cloud">AWS</span>
-                  </li>
-                  <li
-                    class="wow animate__fadeInUp"
-                    data-wow-delay="0.3s"
-                    data-wow-offset="20"
-                    data-wow-duration="0.8s"
-                  >
-                    <h4 class="text-4 mb-3">Backend Engineer</h4>
-                    <h6 class="text-para-xl-1 text-orange text-medium mb-2">
-                      TaaleemGate ( Contract ) | June 2022 - Oct 2023
-                    </h6>
-                    <p class="text-para-1">
-                    Architected an educational platform using Next.js/Nest.js that boosted user engagement by 20% through intuitive UI/UX
-                    design.
-                    Revolutionized assessment processes with AI-powered auto-grading tools, delivering real-time feedback to 5,000+ students
-                    while maintaining 100% grading accuracy.
-                    </p>
-                      <span class="badge bg-next">Next.js</span>
-                      <span class="badge bg-nest">Nest.js</span>
-                      <span class="badge bg-ai">MongoDB</span>
-                      <span class="badge bg-ai">AI Tools</span>
-                  </li>
-                  <li
-                    class="wow animate__fadeInUp"
-                    data-wow-delay="0.3s"
-                    data-wow-offset="20"
-                    data-wow-duration="0.8s"
-                  >
-                    <h4 class="text-4 mb-3">Frontend Developer Intern</h4>
-                    <h6 class="text-para-xl-1 text-orange text-medium mb-2">
-                      Xoommit | Aug 2022 - Feb 2023
-                    </h6>
-                    <p class="text-para-1">
-                      Drove 150% SEO ranking improvement through Next.js optimizations and SEOClarity integration. Spearheaded
-                      cross-department
-                      initiatives leveraging GraphQL and WordPress, delivering 3 major product features ahead of schedule. Implemented
-                      Generative AI solutions that reduced content creation time by 65%.
-                    </p>
-                    <span class="badge bg-seo">SEO</span>
-                    <span class="badge bg-graphql">GraphQL</span>
-                    <span class="badge bg-wordpress">Next.js</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="tab-pane fade" id="awards-3" tabindex="1">
-                <ul class="journey-cards">
-                  <li
-                    class="wow animate__fadeInUp"
-                    data-wow-delay="0.1s"
-                    data-wow-offset="20"
-                    data-wow-duration="0.8s"
-                  >
-                    <h4 class="text-4">Community Star Award</h4>
-                    <h6 class="text-6 text-orange text-medium">1 Award</h6>
-                    <p class="text-para-1">
-                      Recipient of the Rising Star Award in software development,
-                      Recognized for mentoring 100+ developers in modern web technologies for exceptional contributions to the tech community.
-                    </p>
-                  </li>
-                  <li
-                    class="wow animate__fadeInUp"
-                    data-wow-delay="0.3s"
-                    data-wow-offset="20"
-                    data-wow-duration="0.8s"
-                  >
-                    <h4 class="text-4">Tech Leadership Award</h4>
-                    <h6 class="text-6 text-orange text-medium">1 Award</h6>
-                    <p class="text-para-1">
-                      Recipient of the Web Development Excellence Award for
-                      outstanding contributions to the field of Full Stack Web
-                      Development. 
-                      Led 3+ workshops on cloud-native development, backend and CI/CD best practices
-                    </p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Awesome Journey End -->
-        <!-- Latest Project Start -->
-        <section
-          class="latest-project v2 pt-50 pb-50 pt-md-70 pb-md-70 pt-xl-100 pb-xl-100 pt-xxl-130 pb-xxl-130"
-          id="project"
-        >
-          <div class="container">
-            <div class="section-title-center v2">
-              <h2 class="text-w-2">Backend Engineering Portfolio</h2>
-              <p class="text-para-1">
-                Showcasing cloud-native systems and AI-powered solutions - chronicling my evolution from React interfaces to
-                distributed backend architectures. Explore 3+ production deployments leveraging AWS, Golang microservices,
-                and modern full-stack patterns.
-              </p>
-            </div>
-            <div class="slider mt-50 mt-xl-60">
-              <div class="swiper-wrapper" id="projects-container">
-                <!-- Dynamic slides injected here -->
-              </div>
-              <div class="project-pagination"></div>
-            </div>
-          </div>
-        </section>
-        <!-- Latest Project End -->
-        <!-- Contact Start -->
-        <section
-          class="contact v2 pt-50 pb-50 pt-md-70 pb-md-70 pt-xl-100 pb-xl-100 pt-xxl-130 pb-xxl-130"
-          id="contact"
-        >
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="bg-img">
-                  <img src="/assets/img/contacts.png" alt="bg-img" />
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="'section-title v2">
-                  <h2 class="text-w-2 text-bold">Get In Touch</h2>
-                  <p class="text-para-1 mt-3">
-                    Let's discuss cloud architecture, AI integration, or full-stack solutions.
-                    Typically respond within 24 hours.
-                  </p>
-                </div>
-                <form class="contact-form mt-30 mt-xl-60"
-                action="https://formspree.io/f/mwkybndd"
-              method="POST">
-              
-          <!-- Anti-spam Field -->
-          <input type="text" name="_gotcha" style="display:none">
-
-                  <div class="group-form-box">
-                    <div class="form-box">
-                      <input
-                        name="name"
-                        id="name-1"
-                        type="text"
-                        placeholder="Name*"
-                        pattern="[A-Za-z ]{3,}"
-                        required
-                      />
-                    </div>
-                    <div class="form-box">
-                      <input
-                        name="_replyto" 
-                        id="email-2"
-                        type="email"
-                        placeholder="Email*"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div class="form-box">
-                    <input
-                      name="subject"
-                      id="subject-2"
-                      type="text"
-                      placeholder="Subject*"
-                      required
-                    />
-                  </div>
-                  <div class="form-box">
-                    <textarea
-                      name="message"
-                      id="message-3"
-                      placeholder="Message*"
-                      minlength="20"
-                      required
-                    ></textarea>
-                  </div>
-                  <!-- Formspree Configuration -->
-                  <input type="hidden" name="_cc" value="nicholasemmanuel321@gmail.com">
-                  <input type="hidden" name="_subject" value="New Technical Inquiry">
-                  <input type="hidden" name="_autoresponse"
-                    value="Thanks for reaching out! I'll review your technical query and respond within 24 hours. - Nicholas">
-                  <button
-                    class="btn-anime v3 text-capital round-border-small mt-3"
-                    type="submit"
-                  >
-                    <i class="fas fa-paper-plane me-2"></i>Send Message
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Contact End -->
-      </main>
-      <footer>
-        <!-- Main Footer Start -->
-        <div class="main-footer v2 pt-25 pb-25">
-          <div class="container">
-            <div class="footer-content">
-              <div class="footer-logo">
-                <a href="index.html">
-                  <img src="/assets/img/logo.svg" alt="logo" />
-                </a>
-              </div>
-              <div class="footer-scroll">
-                <button class="footer-scroll-Top">
-                  <span class="text-bold font-v3">Back To Top</span
-                  ><i class="my-icon icon-angle-up"></i>
-                </button>
-              </div>
-              <div class="footer-text">
-                <h6 class="text-6">
-                  Copyright By <a href="https://github.com/nickemma" target="_blank">@Techie Emma</a> - 2024
-                </h6>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button class="scroll-bottom-Top v2">
-          <i class="my-icon icon-angle-up"></i>
-        </button>
-        <!-- Main Footer End -->
-      </footer>
+      </div>
     </div>
-    <!-- jQuery -->
-    <script src="/assets/js/jquery-3.7.1.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="/assets/js/bootstrap.min.js"></script>
-    <!-- Plugins -->
-    <script src="/assets/js/plugins.js"></script>
-    <!-- Index -->
-    <script src="/assets/js/project.js"></script>
-    <script src="/assets/js/index.min.js"></script>
-  </body>
+		<!-- teck staack end -->
+		<!-- Portfolio section -->
+    <div id="portfolio" class="section-box">
+      <div class="section-sm bg-dark border-radius-1">
+        <div class="container">
+          <!-- Portfolio Header -->
+          <div class="row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+              <span class="title-heading text-white-04">Portfolio</span>
+              <h1 class="display-3 fw-medium">Recent <span class="text-gradient">Works</span></h1>
+              <p>Explore my latest projects showcasing backend development, cloud architecture, and MLOps solutions. Each
+                project demonstrates scalable systems built with Go, Kubernetes, and AI integration.</p>
+    
+              <!-- Slider Navigation -->
+              <div class="mt-4">
+                <div class="swiper-portfolio-prev button-circle cursor-link">
+                  <i class="bi bi-arrow-left"></i>
+                  <i class="bi bi-arrow-left"></i>
+                </div>
+                <div class="swiper-portfolio-next button-circle cursor-link">
+                  <i class="bi bi-arrow-right"></i>
+                  <i class="bi bi-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Dynamic Portfolio Slider -->
+          <div class="swiper portfolio-slider mt-4 mt-lg-5">
+            <div class="swiper-wrapper" id="portfolio-slider-wrapper"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+		<!-- end Portfolio section -->
+		<!-- Awards section -->
+		<div id="awards" class="section pb-6">
+			<div class="container">
+				<div class="row g-4 g-xl-5">
+					<div class="col-12 col-xl-4">
+						<span class="title-heading text-white-04">Achievements</span>
+						<h1 class="display-3 fw-medium mb-0 selectable" onclick="displayCards('awards', this)">
+							Awa<span class="text-gradient">rds</span>
+						</h1>
+						<h1 class="display-3 fw-medium mb-0 selectable" onclick="displayCards('experience', this)">
+							Expe<span class="text-gradient">rience</span>
+						</h1>
+						<h1 class="display-3 fw-medium mb-0 selectable" onclick="displayCards('education', this)">
+							Educa<span class="text-gradient">tion</span>
+						</h1>
+					</div>
+					<div class="col-12 col-xl-8">
+						<div class="row g-4" id="cards-container">
+                                <!-- Dynamic content -->
+						</div><!-- end row(inner) -->
+					</div>
+				</div><!-- end row -->
+			</div><!-- end container -->
+		</div>
+		<!-- end Awards section -->
+		<!-- Blog section -->
+    <!-- Blog Section -->
+    <div id="blog" class="section-box">
+      <div class="section-sm bg-dark border-radius-1">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+              <span class="title-heading text-white-04">Journal</span>
+              <h1 class="display-3 fw-medium">Technical De<span class="text-gradient">ep Dives</span></h1>
+              <p>Exploring backend architecture, cloud-native patterns, and MLOps best practices. Deep dives into Go,
+                Kubernetes, and secure system design.</p>
+              <!-- Slider Nav -->
+              <div class="mt-4">
+                <div class="swiper-blog-prev button-circle cursor-link">
+                  <i class="bi bi-arrow-left"></i>
+                  <i class="bi bi-arrow-left"></i>
+                </div>
+                <div class="swiper-blog-next button-circle cursor-link">
+                  <i class="bi bi-arrow-right"></i>
+                  <i class="bi bi-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Dynamic Blog Slider -->
+          <div class="swiper blog-slider mt-4 mt-lg-5">
+            <div class="swiper-wrapper" id="blog-slider-wrapper"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+		<!-- end Blog section -->
+
+		<!-- Contact section -->
+		<div id="contact" class="section pb-0">
+			<div class="container">
+				<div class="row g-4 g-xl-5">
+					<div class="col-12 col-xl-4">
+						<span class="title-heading text-white-04">Contact</span>
+						<h1 class="display-3 fw-medium mb-0">Let's <span class="text-gradient">Talk</span></h1>
+					</div>
+					<div class="col-12 col-xl-8">
+						<div class="row g-4 g-lg-5">
+							<div class="col-12 col-md-6">
+								<h6 class="sm-heading">Email:</h6>
+								<h3 class="mb-0">techieemma01@gmail.com</h3>
+							</div>
+							<div class="col-12 col-md-6">
+								<h6 class="sm-heading">Call:</h6>
+								<h3 class="mb-0">+2349163198026</h3>
+							</div>
+						</div><!-- end row(inner) -->
+						<!-- Contact Form -->
+						<div class="contact-form mt-4 mt-lg-5 text-xl-end">
+                <form id="contactform" action="https://formspree.io/f/mwkybndd" method="POST">
+								<div class="row gx-3 gy-0">
+									<div class="col-12 col-md-6">
+										<input type="text" id="name" name="name" placeholder="Name" required>
+									</div>
+									<div class="col-12 col-md-6">
+										<input type="email" id="email" name="email" placeholder="E-Mail" required>
+									</div>
+								</div>
+								<input type="text" id="subject" name="subject" placeholder="Subject" required>
+								<textarea name="message" id="message" placeholder="Message"></textarea>
+								<button class="button button-dot" type="submit">
+									<span data-text="Send Message">Send Message</span>
+								</button>
+							</form>
+							<!-- Submit result -->
+							<div class="submit-result">
+								<span id="success">Thank you! Your Message has been sent.</span>
+								<span id="error">Something went wrong, Please try again!</span>
+							</div>
+						</div><!-- end contact-form -->
+					</div>
+				</div><!-- end row -->
+				<div id="map" class="gmap gmap-md border-radius-1 mt-5"></div>
+			</div><!-- end container -->
+		</div>
+		<!-- end Contact section -->
+	</main>
+
+	<!-- Footer -->
+	<div class="py-4 py-lg-5 text-center">
+		<p>&copy; 2025 <a href="https://github.com/nickemma" target="_blank">Techie Emma</a>, All Rights Reserved.
+		</p>
+	</div>
+	<!-- end Footer -->
+
+	<!-- Scroll To Top -->
+	<div class="scrolltotop">
+		<a class="button-circle" href="#">
+			<i class="bi bi-arrow-up"></i>
+			<i class="bi bi-arrow-up"></i>
+		</a>
+	</div>
+	<!-- end Scroll To Top -->
+
+	<!-- JavaScripts -->
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+	<script src="assets/plugins/jquery.min.js"></script>
+	<script src="assets/js/data.js"></script>
+	<script src="assets/js/projects.js"></script>
+	<script src="assets/js/blogs.js"></script>
+	<script src="assets/js/skills.js"></script>
+	<script src="assets/js/leaflet.js"></script>
+	<script src="assets/plugins/plugins.js"></script>
+	<script src="assets/js/functions.js"></script>
+</body>
+
 </html>
