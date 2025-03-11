@@ -39,7 +39,7 @@ const data = {
         // },
         {
             title: "MLOps Specialization",
-            year: "2024",
+            year: "2025",
             description: "Stanford Online | Courses: Distributed Systems, Model Deployment, Kubernetes for ML"
         },
         {
