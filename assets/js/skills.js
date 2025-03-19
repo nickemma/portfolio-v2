@@ -1,19 +1,27 @@
 // Tech Stack Data - Single source of truth
 const techStack = [
     // Languages
-    'Go', 'Python', 'TypeScript', 'Java',
-    
+    'Go', 'Python', 'TypeScript', 
+
     // Backend & Frameworks
-    'Node.js', 'Gin', 'Spring Boot', 'gRPC',
+    'Gin', 'gRPC', 'FastAPI',      
+    'GraphQL', 'RabbitMQ',         
     
     // Databases
-    'PostgreSQL', 'DynamoDB', 'MongoDB', 'Redis', 'GraphQL',
+    'PostgreSQL', 'DynamoDB', 'MongoDB', 'Redis',  
     
     // Cloud & DevOps
-    'AWS', 'GCP', 'Docker', 'Kubernetes', 'Terraform',
+    'AWS', 'GCP', 
+    'Docker', 'Kubernetes', 
+    'Terraform', 'Prometheus', 'Grafana',
+    'GitHub Actions', 'ArgoCD', 'Helm', 
     
-    // Frontend
-    'React', 'Next.js', 'Redux', 'Tailwind CSS'
+    // MLOps & AI
+    'TensorFlow', 'PyTorch', 
+    'MLflow', 'KServe', 'Kubeflow',
+    
+    // Frontend (minimal, since backend/MLOps is your focus)
+    'React', 'Next.js', 'Tailwind CSS'  
 ];
 
 // Generate slider items

@@ -32,30 +32,30 @@ const data = {
             description: "Developed responsive web app with React/Redux | Increased user retention by 25% through A/B testing | Enhanced SEO ranking by 40%"}
     ],
     education: [
-        // {
-        //     title: "BSc Computer Science",
-        //     year: "2022-2024",
-        //     description: "San Francisco Bay University | GPA: 3.92/4.0 | Focus: AI/ML, Cloud Computing"
-        // },
         {
             title: "MLOps Specialization",
             year: "2025",
-            description: "Stanford Online | Courses: Distributed Systems, Model Deployment, Kubernetes for ML"
+            description: "Duke University | Courses: DevOps, DataOps, MLOps, MLOps Platforms: Amazon SageMaker and Azure ML, MLOps Tools: MLflow and Hugging Face"
         },
         {
-            title: "AWS Certified Developer",
-            year: "2024",
-            description: "Amazon Web Services | Validation ID: AWS-1234-ABCD"
+            title: "AWS Certified Machine Learning - Specialty",
+            year: "2025",
+            description: "Amazon Web Services | Expertise in SageMaker, Lambda, and ML workflows"
         },
+        {
+        title: "Google Cloud Professional ML Engineer",
+        year: "2025",
+        description: "Google Cloud | Vertex AI, Kubeflow, and GCP MLOps pipelines"
+    },
          {
         title: "API Security Certification",
         year: "2024",
-        description: "APIsec University 2024"
+        description: "APIsec University | OAuth2, JWT, and securing cloud-native APIs"
       },
         {
         title: "Software Development", 
-        year: "2021-2022",
-        description: "MICROVERSE" 
+        year: "2022",
+        description: "MICROVERSE | Full-stack engineering, Agile, and DevOps practices"
       }
     ]
 
