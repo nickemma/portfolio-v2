@@ -34,19 +34,14 @@ const data = {
     education: [
         {
             title: "MLOps Specialization",
-            year: "2025",
+            year: "2025 - Ongoing",
             description: "Duke University | Courses: DevOps, DataOps, MLOps, MLOps Platforms: Amazon SageMaker and Azure ML, MLOps Tools: MLflow and Hugging Face"
         },
         {
             title: "AWS Certified Machine Learning - Specialty",
-            year: "2025",
+            year: "2025 - Ongoing",
             description: "Amazon Web Services | Expertise in SageMaker, Lambda, and ML workflows"
         },
-        {
-        title: "Google Cloud Professional ML Engineer",
-        year: "2025",
-        description: "Google Cloud | Vertex AI, Kubeflow, and GCP MLOps pipelines"
-    },
          {
         title: "API Security Certification",
         year: "2024",
