@@ -1,450 +1,579 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>Nicholas Emmanuel - MLOps Infrastructure Engineer</title>
+    <!-- Favicon -->
+    <link href="assets/images/logo.svg" rel="shortcut icon" />
+    <!-- CSS -->
+    <link href="assets/plugins/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="assets/plugins/magnific-popup/magnific-popup.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/plugins/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="assets/css/theme.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- Fonts/Icons -->
+    <link
+      href="assets/plugins/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/plugins/fontawesome/css/all.css" rel="stylesheet" />
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<title>Nicholas Emmanuel</title>
-	<!-- Favicon -->
-	<link href="assets/images/logo.svg" rel="shortcut icon">
-	<!-- CSS -->
-	<link href="assets/plugins/bootstrap/bootstrap.min.css" rel="stylesheet">
-	<link href="assets/plugins/magnific-popup/magnific-popup.min.css" rel="stylesheet">
-	<link href="assets/plugins/swiper/swiper-bundle.min.css" rel="stylesheet">
-	<link href="assets/css/theme.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-	<!-- Fonts/Icons -->
-	<link href="assets/plugins/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-	<link href="assets/plugins/fontawesome/css/all.css" rel="stylesheet">
-</head>
+  <body data-preloader="true">
+    <!-- Cursor -->
+    <div id="cursor"></div>
+    <!-- end Cursor -->
 
-<body data-preloader="true">
+    <!-- Header -->
+    <div class="header">
+      <div class="container-fluid">
+        <div class="header-wrapper">
+          <!-- Header Logo -->
+          <div class="header-logo">
+            <h2>NE</h2>
+          </div>
+          <!-- Header Nav -->
+          <div class="header-nav">
+            <a class="button button-sm button-dot me-2 me-lg-3" href="#contact">
+              <span data-text="Let's Talk">Let's Talk</span>
+            </a>
+            <!-- Nav Menu Toggle -->
+            <button
+              id="nav-toggle"
+              class="button button-sm button-dot button-white"
+            >
+              <span data-text="Menu">Menu</span>
+            </button>
+            <!-- Nav Menu Box -->
+            <div class="nav-box">
+              <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#about"
+                    ><i class="bi bi-arrow-right"></i>About</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#services"
+                    ><i class="bi bi-arrow-right"></i>Services</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#portfolio"
+                    ><i class="bi bi-arrow-right"></i>Portfolio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#awards"
+                    ><i class="bi bi-arrow-right"></i>Achievements</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#blog"
+                    ><i class="bi bi-arrow-right"></i>Blog</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact"
+                    ><i class="bi bi-arrow-right"></i>Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- end header-nav -->
+        </div>
+        <!-- end header-wrapper -->
+      </div>
+      <!-- end container -->
+    </div>
+    <!-- end Header -->
 
-	<!-- Cursor -->
-	<div id="cursor"></div>
-	<!-- end Cursor -->
+    <main data-bs-spy="scroll" data-bs-target=".nav-box">
+      <!-- Hero section -->
+      <div id="about" class="hero-section">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="hero-heading display-1 fw-bold mb-0 stroke-text">
+                NICHOLAS EMMANUEL
+              </h1>
+            </div>
+          </div>
+          <!-- end row -->
+        </div>
+        <!-- end container -->
+      </div>
+      <!-- end Hero section -->
 
-	<!-- Header -->
-	<div class="header">
-		<div class="container-fluid">
-			<div class="header-wrapper">
-				<!-- Header Logo -->
-				<div class="header-logo">
-					<h2>NE</h2>
-				</div>
-				<!-- Header Nav -->
-				<div class="header-nav">
-					<a class="button button-sm button-dot me-2 me-lg-3" href="#contact">
-						<span data-text="Let's Talk">Let's Talk</span>
-					</a>
-					<!-- Nav Menu Toggle -->
-					<button id="nav-toggle" class="button button-sm button-dot button-white">
-						<span data-text="Menu">Menu</span>
-					</button>
-					<!-- Nav Menu Box -->
-					<div class="nav-box">
-						<ul class="nav">
-							<li class="nav-item">
-								<a class="nav-link" href="#about"><i class="bi bi-arrow-right"></i>About</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#services"><i class="bi bi-arrow-right"></i>Services</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#portfolio"><i class="bi bi-arrow-right"></i>Portfolio</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#awards"><i class="bi bi-arrow-right"></i>Achievements</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#blog"><i class="bi bi-arrow-right"></i>Blog</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#contact"><i class="bi bi-arrow-right"></i>Contact</a>
-							</li>
-						</ul>
-					</div>
-				</div><!-- end header-nav -->
-			</div><!-- end header-wrapper -->
-		</div><!-- end container -->
-	</div>
-	<!-- end Header -->
-
-	<main data-bs-spy="scroll" data-bs-target=".nav-box">
-
-		<!-- Hero section -->
-		<div id="about" class="hero-section">
-			<div class="container text-center">
-				<div class="row">
-					<div class="col-12">
-						<h1 class="hero-heading display-1 fw-bold mb-0 stroke-text">NICHOLAS EMMANUEL</h1>
-					</div>
-				</div><!-- end row -->
-			</div><!-- end container -->
-		</div>
-		<!-- end Hero section -->
-
-		<!-- About section -->
-		<div class="container">
-			<div class="row g-4 g-md-5">
-				<div class="col-12 col-lg-4 order-lg-2 text-center">
-					<!-- Hero Avatar -->
-					<div class="hero-avatar">
-						<img src="assets/images/techie3.png" alt="">
-					</div>
-					<!-- end Hero Avatar -->
-				</div>
-				<div class="col-12 col-lg-4 order-lg-1">
-					<div class="row g-4 g-lg-5">
-						<div class="col-12 col-md-4 col-lg-12">
-							<h6 class="sm-heading">Biography</h6>
-              <p>Software Engineer specializing in high-performance systems, scalability, and secure architectures. with a focus on
-               building robust solutions that prioritize performance and user safety.
-			</p>
-			
-						</div>
-						<div class="col-6 col-md-4 col-lg-12">
-							<h6 class="sm-heading">Skills</h6>
-							<ul class="list-inline-dot">
-								<li>Backend Development</li>
-								<li>Database Optimization</li>
-								<li>API & Cybersecurity</li>
-								<li>Cloud & MLOps</li>
-							</ul>
-						</div>
-						<div class="col-6 col-md-4 col-lg-12">
-							<h6 class="sm-heading">Connect</h6>
-							<ul class="list-inline">
-								<li>
-									<a class="button-circle button-circle-sm" target="_blank"
-										href="https://www.linkedin.com/in/techieemma/">
-										<i class="bi bi-linkedin"></i>
-										<i class="bi bi-linkedin"></i>
-									</a>
-								</li>
-								<li>
-									<a class="button-circle button-circle-sm" target="_blank"
-										href="https://x.com/techieEmma">
-										<i class="bi bi-twitter-x"></i>
-										<i class="bi bi-twitter-x"></i>
-									</a>
-								</li>
-								<li>
-									<a class="button-circle button-circle-sm" target="_blank"
-										href="https://github.com/nickemma">
-										<i class="bi bi-github"></i>
-										<i class="bi bi-github"></i>
-									</a>
-								</li>
-								<li>
-									<a class="button-circle button-circle-sm" target="_blank"
-										href="https://medium.com/@nicholasemmanuel321">
-										<i class="bi bi-medium"></i>
-										<i class="bi bi-medium"></i>
-									</a>
-								</li>
-							</ul>
-						</div>
-						
-			<a class="button-resume" href="https://docs.google.com/document/d/1SDUxAOT6aarq1zk_KEDdC8OOtUuZofvE/export?format=pdf"
-				download>
-				<span data-text="Resume ⤓">Resume ⤓</span>
-			</a>
-
-
-					</div><!-- end row(inner) -->
-				</div>
-				<div class="col-12 col-md-12 col-lg-4 order-lg-3 text-lg-end">
-					<div class="row g-4 g-lg-5">
-						<div class="col-4 col-lg-12">
-							<h6 class="sm-heading">Projects Done</h6>
-							<h1 class="fw-light display-4 mb-0 line-height-110">5+</h1>
-						</div>
-						<div class="col-4 col-lg-12">
-							<h6 class="sm-heading">Years of Experience</h6>
-							<h1 class="fw-light display-4 mb-0 line-height-110">3+</h1>
-						</div>
-						<div class="col-4 col-lg-12">
-							<h6 class="sm-heading">Worldwide Companies</h6>
-							<h1 class="fw-light display-4 mb-0 line-height-110">4</h1>
-						</div>
-					</div><!-- end row(inner) -->
-				</div>
-			</div><!-- end row -->
-		</div><!-- end container -->
-		<!-- end About section -->
-
-		<!-- Services section -->
-		<div id="services" class="section">
-			<div class="container">
-				<div class="row g-4 g-xl-5">
-					<div class="col-12 col-xl-4">
-						<span class="title-heading text-white-04">Services</span>
-						<h1 class="display-3 fw-medium mb-0">What I <span class="text-gradient">Do</span></h1>
-					</div>
-					<div class="col-12 col-xl-8">
-						<div class="row g-4">
-							<!-- Service box 1 -->
-							<div class="col-12">
-								<div class="service-box">
-									<div class="service-order">
-										<h3>01/</h3>
-									</div>
-									<div class="service-title">
-										<i class="bi bi-database-check"></i>
-										<h3>Design</h3>
-									</div>
-									<div class="service-text">
-										<p>Designing efficient backend architectures with the focus on scalability and
-											security.</p>
-									</div>
-								</div>
-							</div>
-							<!-- Service box 2 -->
-							<div class="col-12">
-								<div class="service-box">
-									<div class="service-order">
-										<h3>02/</h3>
-									</div>
-									<div class="service-title">
-										<i class="bi bi-code-slash"></i>
-										<h3>Development</h3>
-									</div>
-									<div class="service-text">
-										<p>
-											Crafting performant applications with security-first coding practices – OWASP Top 10 compliance.
-										</p>
-									</div>
-								</div>
-							</div>
-							<!-- Service box 3 -->
-							<div class="col-12">
-								<div class="service-box">
-									<div class="service-order">
-										<h3>03/</h3>
-									</div>
-									<div class="service-title">
-										<i class="bi bi-shield-lock"></i>
-										<h3>Security</h3>
-									</div>
-									<div class="service-text">
-									<p>
-										Embedding proactive threat mitigation – hardening infrastructure, and securing APIs.
-									</p>
-										</div>
-								</div>
-							</div>
-							<!-- end Service box 3 -->
-							<!-- Service box 4 -->
-							<div class="col-12">
-								<div class="service-box">
-									<div class="service-order">
-										<h3>04/</h3>
-									</div>
-									<div class="service-title">
-										<i class="bi bi-rocket-takeoff"></i>
-										<h3>Shipping</h3>
-									</div>
-									<div class="service-text">
-										<p>
-											Shipping secure pipelines – infrastructure-as-code, and runtime monitoring for
-											threats/vulnerabilities.
-										</p>
-									</div>
-								</div>
-							</div>
-							<!-- end Service box 4 -->
-						</div><!-- end row(inner) -->
-					</div>
-				</div><!-- end row -->
-			</div><!-- end container -->
-		</div>
-		<!-- end Services section -->
-
-		<!-- teck stack -->
-    <!-- Clients Section (Tech Stack) -->
-    <div class="section pt-0">
+      <!-- About section -->
       <div class="container">
-        <div class="swiper clients-slider">
-          <div class="swiper-wrapper" id="tech-stack-slider">
-            <!-- Dynamic content will be injected here -->
+        <div class="row g-4 g-md-5">
+          <div class="col-12 col-lg-4 order-lg-2 text-center">
+            <!-- Hero Avatar -->
+            <div class="hero-avatar">
+              <img src="assets/images/techie3.png" alt="" />
+            </div>
+            <!-- end Hero Avatar -->
+          </div>
+          <div class="col-12 col-lg-4 order-lg-1">
+            <div class="row g-4 g-lg-5">
+              <div class="col-12 col-md-4 col-lg-12">
+                <h6 class="sm-heading">Biography</h6>
+                <p>
+                  MLOps Infrastructure Engineer specializing in healthcare AI
+                  deployment and HIPAA-compliant ML pipelines. I build the
+                  backbone that enables healthcare organizations to safely
+                  deploy AI/ML models from prototype to production, ensuring
+                  patient data security and regulatory compliance.
+                </p>
+              </div>
+              <div class="col-6 col-md-4 col-lg-12">
+                <h6 class="sm-heading">Skills</h6>
+                <ul>
+                  <li>Backend Engineering</li>
+                  <li>Model Monitoring</li>
+                  <li>API & Drift Detection</li>
+                  <li>Cloud & MLOps</li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-4 col-lg-12">
+                <h6 class="sm-heading">Connect</h6>
+                <ul class="list-inline">
+                  <li>
+                    <a
+                      class="button-circle button-circle-sm"
+                      target="_blank"
+                      href="https://www.linkedin.com/in/techieemma/"
+                    >
+                      <i class="bi bi-linkedin"></i>
+                      <i class="bi bi-linkedin"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="button-circle button-circle-sm"
+                      target="_blank"
+                      href="https://x.com/techieEmma"
+                    >
+                      <i class="bi bi-twitter-x"></i>
+                      <i class="bi bi-twitter-x"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="button-circle button-circle-sm"
+                      target="_blank"
+                      href="https://github.com/nickemma"
+                    >
+                      <i class="bi bi-github"></i>
+                      <i class="bi bi-github"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="button-circle button-circle-sm"
+                      target="_blank"
+                      href="https://medium.com/@nicholasemmanuel321"
+                    >
+                      <i class="bi bi-medium"></i>
+                      <i class="bi bi-medium"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <a
+                class="button-resume"
+                href="https://docs.google.com/document/d/1SDUxAOT6aarq1zk_KEDdC8OOtUuZofvE/export?format=pdf"
+                download
+              >
+                <span data-text="Resume ⤓">Resume ⤓</span>
+              </a>
+            </div>
+            <!-- end row(inner) -->
+          </div>
+          <div class="col-12 col-md-12 col-lg-4 order-lg-3 text-lg-end">
+            <div class="row g-4 g-lg-5">
+              <div class="col-4 col-lg-12">
+                <h6 class="sm-heading">Projects Done</h6>
+                <h1 class="fw-light display-4 mb-0 line-height-110">8+</h1>
+              </div>
+              <div class="col-4 col-lg-12">
+                <h6 class="sm-heading">Years of Experience</h6>
+                <h1 class="fw-light display-4 mb-0 line-height-110">3+</h1>
+              </div>
+              <div class="col-4 col-lg-12">
+                <h6 class="sm-heading">Worldwide Companies</h6>
+                <h1 class="fw-light display-4 mb-0 line-height-110">4</h1>
+              </div>
+            </div>
+            <!-- end row(inner) -->
+          </div>
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+      <!-- end About section -->
+
+      <!-- Services section -->
+      <div id="services" class="section">
+        <div class="container">
+          <div class="row g-4 g-xl-5">
+            <div class="col-12 col-xl-4">
+              <span class="title-heading text-white-04">Services</span>
+              <h1 class="display-3 fw-medium mb-0">
+                What I <span class="text-gradient">Do</span>
+              </h1>
+            </div>
+            <div class="col-12 col-xl-8">
+              <div class="row g-4">
+                <!-- Service box 1 -->
+                <div class="col-12">
+                  <div class="service-box">
+                    <div class="service-order">
+                      <h3>01/</h3>
+                    </div>
+                    <div class="service-title">
+                      <i class="bi bi-database-check"></i>
+                      <h3>Design</h3>
+                    </div>
+                    <div class="service-text">
+                      <p>
+                        Architecting secure, compliant ML pipelines for
+                        healthcare environments with end-to-end encryption,
+                        audit trails, and regulatory compliance built-in from
+                        day one.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Service box 2 -->
+                <div class="col-12">
+                  <div class="service-box">
+                    <div class="service-order">
+                      <h3>02/</h3>
+                    </div>
+                    <div class="service-title">
+                      <i class="bi bi-code-slash"></i>
+                      <h3>Development</h3>
+                    </div>
+                    <div class="service-text">
+                      <p>
+                        Automated CI/CD pipelines using Kubeflow and MLflow that
+                        safely deploy healthcare AI models from prototype to
+                        production with zero-downtime updates and rollback
+                        capabilities.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Service box 3 -->
+                <div class="col-12">
+                  <div class="service-box">
+                    <div class="service-order">
+                      <h3>03/</h3>
+                    </div>
+                    <div class="service-title">
+                      <i class="bi bi-shield-lock"></i>
+                      <h3>Security</h3>
+                    </div>
+                    <div class="service-text">
+                      <p>
+                        Real-time monitoring systems that ensure your diagnostic
+                        AI performs consistently in clinical settings, with
+                        automated drift detection and model retraining
+                        workflows.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- end Service box 3 -->
+                <!-- Service box 4 -->
+                <div class="col-12">
+                  <div class="service-box">
+                    <div class="service-order">
+                      <h3>04/</h3>
+                    </div>
+                    <div class="service-title">
+                      <i class="bi bi-rocket-takeoff"></i>
+                      <h3>Shipping</h3>
+                    </div>
+                    <div class="service-text">
+                      <p>
+                        Infrastructure-as-code solutions on AWS/GCP that scale
+                        with your healthcare organization's AI ambitions while
+                        maintaining security and compliance standards.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- end Service box 4 -->
+              </div>
+              <!-- end row(inner) -->
+            </div>
+          </div>
+          <!-- end row -->
+        </div>
+        <!-- end container -->
+      </div>
+      <!-- end Services section -->
+
+      <!-- teck stack -->
+      <!-- Clients Section (Tech Stack) -->
+      <div class="section pt-0">
+        <div class="container">
+          <div class="swiper clients-slider">
+            <div class="swiper-wrapper" id="tech-stack-slider">
+              <!-- Dynamic content will be injected here -->
+            </div>
           </div>
         </div>
       </div>
-    </div>
-		<!-- teck stack end -->
-		<!-- Portfolio section -->
-    <div id="portfolio" class="section-box">
-      <div class="section-sm bg-dark border-radius-1">
-        <div class="container">
-          <!-- Portfolio Header -->
-          <div class="row">
-            <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-              <span class="title-heading text-white-04">Portfolio</span>
-              <h1 class="display-3 fw-medium">Recent <span class="text-gradient">Works</span></h1>
-              <p>Explore my latest projects showcasing backend development, cloud architecture, and MLOps solutions. Each
-                project demonstrates scalable systems built with Go, Kubernetes, and AI integration.</p>
-    
-              <!-- Slider Navigation -->
-              <div class="mt-4">
-                <div class="swiper-portfolio-prev button-circle cursor-link">
-                  <i class="bi bi-arrow-left"></i>
-                  <i class="bi bi-arrow-left"></i>
-                </div>
-                <div class="swiper-portfolio-next button-circle cursor-link">
-                  <i class="bi bi-arrow-right"></i>
-                  <i class="bi bi-arrow-right"></i>
+      <!-- teck stack end -->
+      <!-- Portfolio section -->
+      <div id="portfolio" class="section-box">
+        <div class="section-sm bg-dark border-radius-1">
+          <div class="container">
+            <!-- Portfolio Header -->
+            <div class="row">
+              <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                <span class="title-heading text-white-04">Portfolio</span>
+                <h1 class="display-3 fw-medium">
+                  Recent <span class="text-gradient">Works</span>
+                </h1>
+                <p>
+                  Explore my latest projects showcasing backend development,
+                  cloud infrastructure, and HIPAA-compliant MLOps solutions.
+                  Each project demonstrates scalable and secure model deployment
+                  pipelines for healthcare organizations.
+                </p>
+                <!-- Slider Navigation -->
+                <div class="mt-4">
+                  <div class="swiper-portfolio-prev button-circle cursor-link">
+                    <i class="bi bi-arrow-left"></i>
+                    <i class="bi bi-arrow-left"></i>
+                  </div>
+                  <div class="swiper-portfolio-next button-circle cursor-link">
+                    <i class="bi bi-arrow-right"></i>
+                    <i class="bi bi-arrow-right"></i>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-    
-          <!-- Dynamic Portfolio Slider -->
-          <div class="swiper portfolio-slider mt-4 mt-lg-5">
-            <div class="swiper-wrapper" id="portfolio-slider-wrapper"></div>
+
+            <!-- Dynamic Portfolio Slider -->
+            <div class="swiper portfolio-slider mt-4 mt-lg-5">
+              <div class="swiper-wrapper" id="portfolio-slider-wrapper"></div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-		<!-- end Portfolio section -->
-		<!-- Awards section -->
-		<div id="awards" class="section pb-6">
-			<div class="container">
-				<div class="row g-4 g-xl-5">
-					<div class="col-12 col-xl-4">
-						<span class="title-heading text-white-04">Achievements</span>
-						<h1 class="display-3 fw-medium mb-0 selectable" onclick="displayCards('awards', this)">
-							Awa<span class="text-gradient">rds</span>
-						</h1>
-						<h1 class="display-3 fw-medium mb-0 selectable" onclick="displayCards('experience', this)">
-							Expe<span class="text-gradient">rience</span>
-						</h1>
-						<h1 class="display-3 fw-medium mb-0 selectable" onclick="displayCards('education', this)">
-							Educa<span class="text-gradient">tion</span>
-						</h1>
-					</div>
-					<div class="col-12 col-xl-8">
-						<div class="row g-4" id="cards-container">
-                                <!-- Dynamic content -->
-						</div><!-- end row(inner) -->
-					</div>
-				</div><!-- end row -->
-			</div><!-- end container -->
-		</div>
-		<!-- end Awards section -->
-		<!-- Blog section -->
-    <!-- Blog Section -->
-    <div id="blog" class="section-box">
-      <div class="section-sm bg-dark border-radius-1">
+      <!-- end Portfolio section -->
+      <!-- Awards section -->
+      <div id="awards" class="section pb-6">
         <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-              <span class="title-heading text-white-04">Journal</span>
-              <h1 class="display-3 fw-medium">Technical De<span class="text-gradient">ep Dives</span></h1>
-              <p>Exploring backend architecture, cloud-native patterns, and MLOps best practices. Deep dives into Go,
-                Kubernetes, and secure system design.</p>
-              <!-- Slider Nav -->
-              <div class="mt-4">
-                <div class="swiper-blog-prev button-circle cursor-link">
-                  <i class="bi bi-arrow-left"></i>
-                  <i class="bi bi-arrow-left"></i>
-                </div>
-                <div class="swiper-blog-next button-circle cursor-link">
-                  <i class="bi bi-arrow-right"></i>
-                  <i class="bi bi-arrow-right"></i>
+          <div class="row g-4 g-xl-5">
+            <div class="col-12 col-xl-4">
+              <span class="title-heading text-white-04">Achievements</span>
+              <h1
+                class="display-3 fw-medium mb-0 selectable"
+                onclick="displayCards('awards', this)"
+              >
+                Awa<span class="text-gradient">rds</span>
+              </h1>
+              <h1
+                class="display-3 fw-medium mb-0 selectable"
+                onclick="displayCards('experience', this)"
+              >
+                Expe<span class="text-gradient">rience</span>
+              </h1>
+              <h1
+                class="display-3 fw-medium mb-0 selectable"
+                onclick="displayCards('education', this)"
+              >
+                Educa<span class="text-gradient">tion</span>
+              </h1>
+            </div>
+            <div class="col-12 col-xl-8">
+              <div class="row g-4" id="cards-container">
+                <!-- Dynamic content -->
+              </div>
+              <!-- end row(inner) -->
+            </div>
+          </div>
+          <!-- end row -->
+        </div>
+        <!-- end container -->
+      </div>
+      <!-- end Awards section -->
+      <!-- Blog section -->
+      <!-- Blog Section -->
+      <div id="blog" class="section-box">
+        <div class="section-sm bg-dark border-radius-1">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                <span class="title-heading text-white-04">Journal</span>
+                <h1 class="display-3 fw-medium">
+                  Technical De<span class="text-gradient">ep Dives</span>
+                </h1>
+                <p>
+                  Exploring backend architecture, cloud-native patterns, and
+                  MLOps best practices. Deep dives into Go, Python, Kubernetes,
+                  and secure system design.
+                </p>
+                <!-- Slider Nav -->
+                <div class="mt-4">
+                  <div class="swiper-blog-prev button-circle cursor-link">
+                    <i class="bi bi-arrow-left"></i>
+                    <i class="bi bi-arrow-left"></i>
+                  </div>
+                  <div class="swiper-blog-next button-circle cursor-link">
+                    <i class="bi bi-arrow-right"></i>
+                    <i class="bi bi-arrow-right"></i>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-    
-          <!-- Dynamic Blog Slider -->
-          <div class="swiper blog-slider mt-4 mt-lg-5">
-            <div class="swiper-wrapper" id="blog-slider-wrapper"></div>
+
+            <!-- Dynamic Blog Slider -->
+            <div class="swiper blog-slider mt-4 mt-lg-5">
+              <div class="swiper-wrapper" id="blog-slider-wrapper"></div>
+            </div>
           </div>
         </div>
       </div>
+      <!-- end Blog section -->
+
+      <!-- Contact section -->
+      <div id="contact" class="section pb-0">
+        <div class="container">
+          <div class="row g-4 g-xl-5">
+            <div class="col-12 col-xl-4">
+              <span class="title-heading text-white-04">Contact</span>
+              <h1 class="display-3 fw-medium mb-0">
+                Let's <span class="text-gradient">Talk</span>
+              </h1>
+            </div>
+            <div class="col-12 col-xl-8">
+              <div class="row g-4 g-lg-5">
+                <div class="col-12 col-md-6">
+                  <h6 class="sm-heading">Email:</h6>
+                  <h3 class="mb-0">techieemma01@gmail.com</h3>
+                </div>
+                <div class="col-12 col-md-6">
+                  <h6 class="sm-heading">Call:</h6>
+                  <h3 class="mb-0">+2349163198026</h3>
+                </div>
+              </div>
+              <!-- end row(inner) -->
+              <!-- Contact Form -->
+              <div class="contact-form mt-4 mt-lg-5 text-xl-end">
+                <form
+                  id="contactform"
+                  action="https://formspree.io/f/mwkybndd"
+                  method="POST"
+                >
+                  <div class="row gx-3 gy-0">
+                    <div class="col-12 col-md-6">
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Name"
+                        required
+                      />
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="E-Mail"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="Subject"
+                    required
+                  />
+                  <textarea
+                    name="message"
+                    id="message"
+                    placeholder="Message"
+                  ></textarea>
+                  <button class="button button-dot" type="submit">
+                    <span data-text="Send Message">Send Message</span>
+                  </button>
+                </form>
+                <!-- Submit result -->
+                <div class="submit-result">
+                  <span id="success"
+                    >Thank you! Your Message has been sent.</span
+                  >
+                  <span id="error"
+                    >Something went wrong, Please try again!</span
+                  >
+                </div>
+              </div>
+              <!-- end contact-form -->
+            </div>
+          </div>
+          <!-- end row -->
+          <div id="map" class="gmap gmap-md border-radius-1 mt-5"></div>
+        </div>
+        <!-- end container -->
+      </div>
+      <!-- end Contact section -->
+    </main>
+
+    <!-- Footer -->
+    <div class="py-4 py-lg-5 text-center">
+      <p>
+        &copy; 2025
+        <a href="https://github.com/nickemma" target="_blank">Techie Emma</a>,
+        All Rights Reserved.
+      </p>
     </div>
-		<!-- end Blog section -->
+    <!-- end Footer -->
 
-		<!-- Contact section -->
-		<div id="contact" class="section pb-0">
-			<div class="container">
-				<div class="row g-4 g-xl-5">
-					<div class="col-12 col-xl-4">
-						<span class="title-heading text-white-04">Contact</span>
-						<h1 class="display-3 fw-medium mb-0">Let's <span class="text-gradient">Talk</span></h1>
-					</div>
-					<div class="col-12 col-xl-8">
-						<div class="row g-4 g-lg-5">
-							<div class="col-12 col-md-6">
-								<h6 class="sm-heading">Email:</h6>
-								<h3 class="mb-0">techieemma01@gmail.com</h3>
-							</div>
-							<div class="col-12 col-md-6">
-								<h6 class="sm-heading">Call:</h6>
-								<h3 class="mb-0">+2349163198026</h3>
-							</div>
-						</div><!-- end row(inner) -->
-						<!-- Contact Form -->
-						<div class="contact-form mt-4 mt-lg-5 text-xl-end">
-                <form id="contactform" action="https://formspree.io/f/mwkybndd" method="POST">
-								<div class="row gx-3 gy-0">
-									<div class="col-12 col-md-6">
-										<input type="text" id="name" name="name" placeholder="Name" required>
-									</div>
-									<div class="col-12 col-md-6">
-										<input type="email" id="email" name="email" placeholder="E-Mail" required>
-									</div>
-								</div>
-								<input type="text" id="subject" name="subject" placeholder="Subject" required>
-								<textarea name="message" id="message" placeholder="Message"></textarea>
-								<button class="button button-dot" type="submit">
-									<span data-text="Send Message">Send Message</span>
-								</button>
-							</form>
-							<!-- Submit result -->
-							<div class="submit-result">
-								<span id="success">Thank you! Your Message has been sent.</span>
-								<span id="error">Something went wrong, Please try again!</span>
-							</div>
-						</div><!-- end contact-form -->
-					</div>
-				</div><!-- end row -->
-				<div id="map" class="gmap gmap-md border-radius-1 mt-5"></div>
-			</div><!-- end container -->
-		</div>
-		<!-- end Contact section -->
-	</main>
+    <!-- Scroll To Top -->
+    <div class="scrolltotop">
+      <a class="button-circle" href="#">
+        <i class="bi bi-arrow-up"></i>
+        <i class="bi bi-arrow-up"></i>
+      </a>
+    </div>
+    <!-- end Scroll To Top -->
 
-	<!-- Footer -->
-	<div class="py-4 py-lg-5 text-center">
-		<p>&copy; 2025 <a href="https://github.com/nickemma" target="_blank">Techie Emma</a>, All Rights Reserved.
-		</p>
-	</div>
-	<!-- end Footer -->
-
-	<!-- Scroll To Top -->
-	<div class="scrolltotop">
-		<a class="button-circle" href="#">
-			<i class="bi bi-arrow-up"></i>
-			<i class="bi bi-arrow-up"></i>
-		</a>
-	</div>
-	<!-- end Scroll To Top -->
-
-	<!-- JavaScripts -->
-	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-	<script src="assets/plugins/jquery.min.js"></script>
-	<script src="assets/js/data.js"></script>
-	<script src="assets/js/projects.js"></script>
-	<script src="assets/js/blogs.js"></script>
-	<script src="assets/js/skills.js"></script>
-	<script src="assets/js/leaflet.js"></script>
-	<script src="assets/plugins/plugins.js"></script>
-	<script src="assets/js/functions.js"></script>
-</body>
-
+    <!-- JavaScripts -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="assets/plugins/jquery.min.js"></script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/projects.js"></script>
+    <script src="assets/js/blogs.js"></script>
+    <script src="assets/js/skills.js"></script>
+    <script src="assets/js/leaflet.js"></script>
+    <script src="assets/plugins/plugins.js"></script>
+    <script src="assets/js/functions.js"></script>
+  </body>
 </html>
