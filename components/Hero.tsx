@@ -5,7 +5,7 @@ import { useEffect, useRef } from "react";
 const stats = [
     { value: "4+", label: "Years Engineering" },
     { value: "40+", label: "Engineers Mentored" },
-    { value: "4", label: "Systems Built" },
+    { value: "6", label: "Systems Built" },
     { value: "97.2%", label: "Uptime Delivered" },
 ];
 
@@ -36,7 +36,7 @@ export default function Hero() {
                 </div>
 
                 {/* Name */}
-                <h1 className="reveal hero-item font-display leading-[0.88] tracking-[0.02em] text-[clamp(4.2rem,11vw,9.5rem)] mb-3">
+                <h1 className="reveal hero-item font-display leading-[0.88] tracking-[0.02em] text-[clamp(4rem,10vw,9rem)] mb-3">
                     NICHOLAS
                     <br />
                     <span
@@ -152,7 +152,7 @@ export default function Hero() {
                     </div>
                     <div className="pl-4">
                         YearsExp&nbsp;&nbsp;
-                        <span className="text-neon-green">4</span>
+                        <span className="text-neon-green">4+</span>
                     </div>
                     <div className="pl-4">
                         Focus&nbsp;&nbsp;&nbsp;&nbsp;[]
