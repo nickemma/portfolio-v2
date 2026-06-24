@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+    metadataBase: new URL("https://techieemma.vercel.app"),
     title: "Nicholas Emmanuel — Distributed Systems & Platform Engineer",
     description:
         "Backend Systems & Platform Engineer with 4+ years building high-throughput, secure, production-grade distributed systems. Specialising in Raft consensus, event streaming, cloud-native infrastructure, and SRE.",
@@ -12,10 +13,26 @@ export const metadata: Metadata = {
         "Go",
         "Kubernetes",
         "Raft consensus",
+        "cybersecurity",
     ],
     authors: [
         { name: "Nicholas Emmanuel", url: "https://github.com/nickemma" },
     ],
+
+    icons: {
+        icon: [
+            { url: "/favicon.ico", sizes: "any" },
+            { url: "/favicon.svg", type: "image/svg+xml" },
+            { url: "/icon-32.png", type: "image/png", sizes: "32x32" },
+            { url: "/icon-16.png", type: "image/png", sizes: "16x16" },
+        ],
+        apple: [{ url: "/icon-180.png", sizes: "180x180", type: "image/png" }],
+    },
+    manifest: "/site.webmanifest",
+};
+
+export const viewport: Viewport = {
+    themeColor: "#0A0E16",
 };
 
 export default function RootLayout({

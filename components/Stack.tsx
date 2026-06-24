@@ -3,7 +3,7 @@ import ScrollReveal from "./ScrollReveal";
 const categories = [
     {
         name: "Languages",
-        items: ["Go", "Python", "Rust", "TypeScript", "Bash / Linux"],
+        items: ["Go", "Python", "Rust", "C", "SQL", "Bash / Linux"],
     },
     {
         name: "Data Stores",
@@ -53,14 +53,15 @@ const categories = [
         ],
     },
     {
-        name: "Security",
+        name: "Security & Zero-Trust",
         items: [
             "Zero-Trust Architecture",
             "mTLS",
             "RBAC + ABAC",
+            "OAuth2 / OIDC",
             "JWT",
-            "Audit Logs",
-            "Secrets Rotation",
+            "Secrets Management",
+            "Audit Logging",
         ],
     },
 ];

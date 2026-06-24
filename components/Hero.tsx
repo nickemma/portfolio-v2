@@ -53,9 +53,12 @@ export default function Hero() {
                 <p className="reveal hero-item font-mono text-[0.75rem] text-grey tracking-[0.08em] mb-7 flex flex-wrap items-center gap-x-3 gap-y-1">
                     Backend Systems Engineer
                     <span className="text-cyan/50">//</span>
-                    Distributed Engineering
-                    <span className="text-cyan/50">//</span>
                     Platform Engineering
+                    <span className="text-cyan/50">//</span>
+                    Cybersecurity Engineer
+                </p>
+                <p className="reveal hero-item font-mono text-[0.62rem] text-cyan/70 tracking-[0.35em] uppercase mb-7">
+                    Build · Secure · Lead
                 </p>
 
                 {/* Description */}
@@ -67,10 +70,11 @@ export default function Hero() {
                     From Raft consensus engines and event streaming platforms to
                     internal developer tooling — I care deeply about{" "}
                     <strong className="text-primary font-medium">
-                        reliability, scale, and making infrastructure invisible
+                        reliability, scale, and security by design:
                     </strong>{" "}
-                    so product teams can move fast. Technology should serve
-                    humanity with excellence.
+                    making infrastructure invisible and resilient so product
+                    teams can move fast on a foundation that holds. Technology
+                    should serve humanity with excellence.
                 </p>
 
                 {/* CTA */}
@@ -173,7 +177,7 @@ export default function Hero() {
                     </div>
                     <div className="pl-8">
                         <span className="text-[#fbbf24]">
-                            &quot;systems-reliability&quot;
+                            &quot;cyber-security&quot;
                         </span>
                         ,
                     </div>

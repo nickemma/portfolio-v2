@@ -1,0 +1,22 @@
+{
+    "name": "Nicholas Emmanuel — Distributed Systems & Platform Engineer",
+    "short_name": "Nicholas Emmanuel",
+    "description": "Backend Systems & Platform Engineer building secure, production-grade distributed systems.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0A0E16",
+    "theme_color": "#0A0E16",
+    "icons": [
+        {
+            "src": "/icon-180.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ]
+}

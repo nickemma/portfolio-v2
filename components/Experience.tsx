@@ -12,9 +12,9 @@ const experiences = [
     },
     {
         period: "Feb 2026 — Present",
-        role: "Co-Founder & Platform Engineer",
+        role: "Co-Founder & Team Lead",
         company: "Wellspring",
-        location: "Lagos, Nigeria · Remote",
+        location: "Ontario, Canada · Remote",
         bullets: [
             "Co-founding and architecting Wellspring — a faith-companion mobile platform targeting 685M+ African Christians across Nigeria, Ghana, Kenya, and beyond. Designing the full platform infrastructure: daily scripture delivery, discipleship tracking, AI-assisted spiritual discipline, family track, and church integration — engineered for scale and resilience from day one.",
         ],
@@ -46,6 +46,17 @@ const education = {
     location: "Pasadena, CA",
     period: "Expected Jun 2026",
 };
+
+const certifications = [
+    {
+        title: "Google Cybersecurity Certificate",
+        detail: "Threat detection, network security, SIEM tooling, and incident-response fundamentals.",
+    },
+    {
+        title: "API Security",
+        detail: "Securing REST APIs — authn/authz, the OWASP API Top 10, token handling, and rate limiting.",
+    },
+];
 
 const awards = [
     {
@@ -152,6 +163,27 @@ export default function Experience() {
                             <div className="font-mono text-[0.6rem] text-muted tracking-widest uppercase mt-1">
                                 {education.location} · {education.period}
                             </div>
+                        </div>
+                    </ScrollReveal>
+
+                    <ScrollReveal delay={100}>
+                        <div className="font-mono text-[0.6rem] text-cyan tracking-[0.2em] uppercase mb-5">
+                            Certifications
+                        </div>
+                        <div className="space-y-5">
+                            {certifications.map((c) => (
+                                <div
+                                    key={c.title}
+                                    className="border-l-2 border-cyan/20 pl-4 hover:border-cyan transition-colors duration-300"
+                                >
+                                    <div className="text-[0.87rem] text-primary font-medium mb-1 leading-snug">
+                                        {c.title}
+                                    </div>
+                                    <div className="text-[0.8rem] text-grey leading-relaxed">
+                                        {c.detail}
+                                    </div>
+                                </div>
+                            ))}
                         </div>
                     </ScrollReveal>
 

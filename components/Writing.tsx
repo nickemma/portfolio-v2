@@ -27,18 +27,10 @@ const articles = [
     },
     {
         num: "04",
-        title: "Event-Driven Supply Chain: Why I Built ChainPulse Without Kafka",
-        tag: "ARCHITECTURE",
+        title: "Treating AI Like a User: How SYNAPSE-AI Governs a Model the Same Way It Governs a Person",
+        tag: "SECURITY & AI",
         date: "Coming Soon",
-        href: "https://github.com/nickemma/chainpulse",
-        live: false,
-    },
-    {
-        num: "05",
-        title: "Tunable Consistency Per Request — A Deep Dive Into Meridian's Consistency Model",
-        tag: "DISTRIBUTED SYSTEMS",
-        date: "Coming Soon",
-        href: "https://github.com/nickemma/meridian",
+        href: "https://github.com/nickemma/synapse",
         live: false,
     },
 ];
