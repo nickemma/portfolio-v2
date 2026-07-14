@@ -51,11 +51,13 @@ export default function Hero() {
 
                 {/* Roles */}
                 <p className="reveal hero-item font-mono text-[0.75rem] text-grey tracking-[0.08em] mb-7 flex flex-wrap items-center gap-x-3 gap-y-1">
-                    Backend Systems Engineer
+                  Platform Engineering
                     <span className="text-cyan/50">//</span>
-                    Platform Engineering
+                    Distributed Systems
                     <span className="text-cyan/50">//</span>
-                    Cybersecurity Engineer
+                    AI Infrastructure
+                    <span className="text-cyan/50">//</span>
+                    Security
                 </p>
                 <p className="reveal hero-item font-mono text-[0.62rem] text-cyan/70 tracking-[0.35em] uppercase mb-7">
                     Build · Secure · Lead
@@ -177,7 +179,7 @@ export default function Hero() {
                     </div>
                     <div className="pl-8">
                         <span className="text-[#fbbf24]">
-                            &quot;cyber-security&quot;
+                            &quot;security and AI/ML&quot;
                         </span>
                         ,
                     </div>

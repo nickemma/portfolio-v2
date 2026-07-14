@@ -39,19 +39,38 @@ const projects = [
     },
     {
         num: "PROJECT.03",
-        name: "SYNAPSE-AI",
-        tagline: "Consent-Governed Neural Data & Privacy-Preserving ML",
-        desc: "A platform for the most sensitive data there is — neural signals — where AI is treated as a privileged consumer that must obey the same consent, encryption, and audit rules as any human user. Streams are encrypted at the edge and stored append-only; models train via federated learning, so the model travels to the data and never the reverse. Inference runs only under active consent and differential privacy, and every prediction records its model version, dataset, consent status, and requester. Secure by design from the threat model up.",
-        metric: "AI obeys the same consent, encryption & audit rules as any user",
+        name: "ONEFRYM",
+        tagline: "Business Operating System for African SMEs",
+        desc: "A modular Business Operating System that unifies finance, reputation, compliance, and business operations into a single platform. Every financial event flows through an immutable transaction ledger where business, personal, and owner withdrawals are enforced as first-class accounting primitives before powering AI-assisted bookkeeping, cash-flow analytics, invoicing, automated payment reconciliation, compliance workflows, and customer reputation management. Designed around domain-driven modules so new business capabilities plug into a shared financial, identity, audit, and event infrastructure.",
+        metric: "From fragmented spreadsheets & apps → one unified operating system",
         tags: [
-            "Rust",
             "Go",
-            "Python",
-            "Federated Learning",
-            "Differential Privacy",
-            "mTLS",
+            "Next.js",
+            "TypeScript",
+            "PostgreSQL",
+            "Docker",
+            "Claude AI",
+            "DDD",
         ],
-        href: "https://github.com/nickemma/synapse-ai",
+        href: "https://github.com/nickemma/onefrym",
+        status: "building" as const,
+    },
+    {
+        num: "PROJECT.04",
+        name: "VEYRONIX",
+        tagline: "Internal Developer Platform & Deployment Orchestrator",
+        desc: "A provider-agnostic Internal Developer Platform that abstracts application delivery behind a single deployment workflow. Applications are deployed through pluggable providers (Netlify, VPS, Heroku, Kubernetes, AWS, Azure, GCP and beyond) while the platform automatically handles authentication, RBAC/ABAC authorization, secrets injection, deployment orchestration, health verification, rollback, audit logging, and end-to-end observability. Designed around a provider interface so new deployment targets become plugins rather than platform rewrites.",
+        metric: "One deployment workflow for every infrastructure provider",
+        tags: [
+            "Go",
+            "Next.js",
+            "TypeScript",
+            "PostgreSQL",
+            "Docker",
+            "Kubernetes",
+            "Platform Engineering",
+        ],
+        href: "https://github.com/nickemma/forge",
         status: "building" as const,
     },
 ];
@@ -72,7 +91,7 @@ export default function Projects() {
             </ScrollReveal>
 
             {/* 3-up on desktop, stacked on mobile */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-cyan/10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-cyan/10">
                 {projects.map((p, i) => (
                     <ScrollReveal key={p.num} delay={i * 80}>
                         <a
