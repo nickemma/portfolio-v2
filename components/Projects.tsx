@@ -52,7 +52,7 @@ const projects = [
             "Claude AI",
             "DDD",
         ],
-        href: "https://github.com/nickemma/onefrym",
+        href: "https://onefrym.com",
         status: "building" as const,
     },
     {
@@ -70,7 +70,7 @@ const projects = [
             "Kubernetes",
             "Platform Engineering",
         ],
-        href: "https://github.com/nickemma/forge",
+        href: "https://github.com/nickemma/veyronix",
         status: "building" as const,
     },
 ];
