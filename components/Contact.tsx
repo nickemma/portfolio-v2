@@ -91,10 +91,7 @@ export default function Contact() {
                         SOMETHING.
                     </h2>
                     <p className="text-[0.95rem] text-grey leading-[1.85] mb-8 max-w-sm">
-                        Open to Mid&nbsp;/&nbsp;Senior IC roles at companies
-                        building distributed infrastructure. Also available for
-                        consulting on systems design, and internal developer
-                        platforms.
+                      Open to roles building distributed systems and AI infrastructure. Also available for consulting on systems design and internal platforms.
                     </p>
                     <p className="font-mono text-[0.65rem] text-muted tracking-widest uppercase mb-6 italic">
                         &quot;For I know the plans I have for you&quot; — Jer.

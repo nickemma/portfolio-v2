@@ -6,7 +6,6 @@ const stats = [
     { value: "4+", label: "Years Engineering" },
     { value: "40+", label: "Engineers Mentored" },
     { value: "6", label: "Systems Built" },
-    { value: "97.2%", label: "Uptime Delivered" },
 ];
 
 export default function Hero() {
@@ -32,7 +31,7 @@ export default function Hero() {
                 {/* Badge */}
                 <div className="reveal hero-item flex items-center gap-3 font-mono text-[0.65rem] text-neon-green tracking-[0.18em] uppercase mb-7">
                     <span className="w-[7px] h-[7px] rounded-full bg-neon-green pulse-dot shrink-0" />
-                    Available — Open to Senior IC &amp; Platform Roles
+                    Available — Open to Distributed Systems &amp; AI Infrastructure roles
                 </div>
 
                 {/* Name */}
@@ -51,13 +50,9 @@ export default function Hero() {
 
                 {/* Roles */}
                 <p className="reveal hero-item font-mono text-[0.75rem] text-grey tracking-[0.08em] mb-7 flex flex-wrap items-center gap-x-3 gap-y-1">
-                  Platform Engineering
-                    <span className="text-cyan/50">//</span>
                     Distributed Systems
                     <span className="text-cyan/50">//</span>
-                    AI Infrastructure
-                    <span className="text-cyan/50">//</span>
-                    Security
+                    AI Infrastructure — Secure by Design
                 </p>
                 <p className="reveal hero-item font-mono text-[0.62rem] text-cyan/70 tracking-[0.35em] uppercase mb-7">
                     Build · Secure · Lead
@@ -67,16 +62,13 @@ export default function Hero() {
                 <p className="reveal hero-item text-[1.02rem] text-grey leading-[1.85] mb-10 max-w-xl">
                     I build the systems that{" "}
                     <strong className="text-primary font-medium">
-                        power everything else.
+                      power everything else —
                     </strong>{" "}
-                    From Raft consensus engines and event streaming platforms to
-                    internal developer tooling — I care deeply about{" "}
+                    consensus engines, distributed storage, internal platforms, and the infrastructure that serves AI.{" "}
                     <strong className="text-primary font-medium">
-                        reliability, scale, and security by design:
+                      Secure by design, engineered for failure, built to hold at scale.
                     </strong>{" "}
-                    making infrastructure invisible and resilient so product
-                    teams can move fast on a foundation that holds. Technology
-                    should serve humanity with excellence.
+                    Technology should serve humanity with excellence.
                 </p>
 
                 {/* CTA */}
@@ -151,12 +143,6 @@ export default function Hero() {
                         </span>
                     </div>
                     <div className="pl-4">
-                        Level&nbsp;&nbsp;&nbsp;&nbsp;
-                        <span className="text-[#fbbf24]">
-                            &quot;Mid → Senior IC&quot;
-                        </span>
-                    </div>
-                    <div className="pl-4">
                         YearsExp&nbsp;&nbsp;
                         <span className="text-neon-green">4+</span>
                     </div>
@@ -173,13 +159,13 @@ export default function Hero() {
                     </div>
                     <div className="pl-8">
                         <span className="text-[#fbbf24]">
-                            &quot;platform-engineering&quot;
+                            &quot;ai-infrastructure&quot;
                         </span>
                         ,
                     </div>
                     <div className="pl-8">
                         <span className="text-[#fbbf24]">
-                            &quot;security and AI/ML&quot;
+                            &quot;security-by-design&quot;
                         </span>
                         ,
                     </div>
@@ -193,7 +179,7 @@ export default function Hero() {
                     <div className="pl-4">
                         OpenTo&nbsp;&nbsp;&nbsp;
                         <span className="text-[#fbbf24]">
-                            &quot;platform/dist-systems&quot;
+                            &quot;dist-systems / ai-infra&quot;
                         </span>
                     </div>
                     <div>{"}"}</div>

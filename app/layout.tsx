@@ -3,9 +3,9 @@ import "./globals.css";
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://techieemma.vercel.app"),
-    title: "Nicholas Emmanuel — Distributed Systems & Platform Engineer",
+    title: "Nicholas Emmanuel — Distributed Systems & AI Infrastructure Engineer",
     description:
-        "Backend Systems & Platform Engineer with 4+ years building high-throughput, secure, production-grade distributed systems. Specialising in Raft consensus, event streaming, cloud-native infrastructure, and SRE.",
+        "Distributed Systems & AI Infrastructure Engineer. I build secure, reliable distributed systems and AI infrastructure at scale — consensus engines, internal platforms, and LLM inference systems.",
     keywords: [
         "distributed systems",
         "platform engineering",
@@ -14,6 +14,8 @@ export const metadata: Metadata = {
         "Kubernetes",
         "Raft consensus",
         "cybersecurity",
+        "AI infrastructure",
+        "LLM inference",
     ],
     authors: [
         { name: "Nicholas Emmanuel", url: "https://github.com/nickemma" },

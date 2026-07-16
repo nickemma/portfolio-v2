@@ -7,8 +7,7 @@ const experiences = [
         company: "Westpay Global Resources",
         location: "Remote · Contract",
         bullets: [
-            "Collaborating with a cross-functional team to design and ship full-stack application architecture for a fintech payments platform. Building secure, scalable RESTful APIs across identity verification and transaction flows, while owning the full delivery lifecycle — from planning and implementation through testing, deployment, and ongoing maintenance.",
-        ],
+          "Building backend services for a fintech payments platform — identity verification and transaction flows — with idempotent APIs, secure credential handling, and full delivery ownership from design through production operations."],
     },
     {
         period: "Feb 2026 — Present",
@@ -16,7 +15,7 @@ const experiences = [
         company: "Wellspring",
         location: "Ontario, Canada · Remote",
         bullets: [
-            "Co-founding and architecting Wellspring — a faith-companion mobile platform targeting 685M+ African Christians across Nigeria, Ghana, Kenya, and beyond. Designing the full platform infrastructure: daily scripture delivery, discipleship tracking, AI-assisted spiritual discipline, family track, and church integration — engineered for scale and resilience from day one.",
+            "Architecting the platform infrastructure — API design, data model, delivery pipeline, and reliability engineering — for a faith-companion platform targeting 685M+ African Christians."
         ],
     },
     {
@@ -44,7 +43,9 @@ const education = {
     gpa: "GPA 3.84 / 4.0",
     school: "University of the People",
     location: "Pasadena, CA",
-    period: "Expected Jun 2026",
+    period: "Jun 2026",
+    incoming:
+        "Incoming: MSE, Software Systems & Cybersecurity — University of Pennsylvania",
 };
 
 const certifications = [
@@ -62,10 +63,6 @@ const awards = [
     {
         title: "ACM × CIIED Hackathon 2023 — Top 15 Finalist",
         detail: "14th of 100+ teams. Built a real-time data sync solution under time constraints. Awarded for Technical Execution & Usability.",
-    },
-    {
-        title: "Tech Leap Association — VP & Student Mentor",
-        detail: "Community Star Award Winner. Mentored 40+ engineers from non-traditional backgrounds across backend, infrastructure, and distributed systems.",
     },
 ];
 
@@ -150,18 +147,37 @@ export default function Experience() {
                         <div className="font-mono text-[0.6rem] text-cyan tracking-[0.2em] uppercase mb-5">
                             Education
                         </div>
+
                         <div className="border border-cyan/10 p-6 bg-bg-3">
                             <div className="font-display text-[1.5rem] text-primary leading-none mb-1">
                                 {education.degree}
                             </div>
+
                             <div className="font-mono text-[0.65rem] text-neon-green mb-3">
                                 {education.gpa}
                             </div>
+
                             <div className="text-[0.85rem] text-grey">
                                 {education.school}
                             </div>
+
                             <div className="font-mono text-[0.6rem] text-muted tracking-widest uppercase mt-1">
                                 {education.location} · {education.period}
+                            </div>
+
+                            {/* Incoming */}
+                            <div className="mt-6 pt-5 border-t border-cyan/10">
+                                <div className="font-mono text-[0.6rem] text-amber-400 tracking-[0.18em] uppercase mb-2">
+                                    Incoming
+                                </div>
+
+                                <div className="text-[0.85rem] text-primary">
+                                    MSE. Software Systems &amp; Cybersecurity
+                                </div>
+
+                                <div className="font-mono text-[0.65rem] text-grey mt-1">
+                                    University of Pennsylvania
+                                </div>
                             </div>
                         </div>
                     </ScrollReveal>
@@ -189,7 +205,7 @@ export default function Experience() {
 
                     <ScrollReveal delay={120}>
                         <div className="font-mono text-[0.6rem] text-cyan tracking-[0.2em] uppercase mb-5">
-                            Awards & Recognition
+                            Awards
                         </div>
                         <div className="space-y-5">
                             {awards.map((a) => (
