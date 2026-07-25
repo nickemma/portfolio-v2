@@ -3,11 +3,11 @@ import ScrollReveal from "./ScrollReveal";
 const experiences = [
     {
         period: "May 2026 — Present",
-        role: "Software Engineer",
+        role: "Software & Infrastructure Engineer",
         company: "Westpay Global Resources",
         location: "Remote · Contract",
         bullets: [
-          "Building backend services for a fintech payments platform — identity verification and transaction flows — with idempotent APIs, secure credential handling, and full delivery ownership from design through production operations."],
+          "Contributed to the development of a fintech payments platform, focusing on backend services for identity verification and transaction processing. Implemented secure, idempotent APIs and robust credential management to improve service reliability and security. Participated in the full software development lifecycle, including planning, testing, deployment, and code reviews, ensuring high-quality and maintainable solutions."],
     },
     {
         period: "Feb 2026 — Present",
@@ -24,7 +24,7 @@ const experiences = [
         company: "Atop Web Technologies",
         location: "Stockholm, Sweden (Remote)",
         bullets: [
-            "Contributed to the development of a B2B SaaS platform for e-commerce analytics, focusing on backend services and data pipelines. Implemented features that improved data processing efficiency by 30% and enhanced the platform's scalability to support a growing user base.",
+            "Contributed to the development of a B2B SaaS event streaming platform, focusing on backend services and real-time event infrastructure. Implemented and optimized backend features using NestJS, PostgreSQL, Redis, WebSockets, and Docker, improving data processing efficiency by 30% while enhancing the platform's scalability and reliability. Collaborated with cross-functional teams to deliver role-based workflows for judges, dancers, studio owners, and event organizers, enabling seamless live scoring, event updates, music streaming, and judge verdicts.",
         ],
     },
     {
