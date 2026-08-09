@@ -25,22 +25,22 @@ const articles = [
         href: "https://medium.com/@techieemma/build-a-real-url-shortener-in-go-from-one-file-to-microservices-to-serverless-88749eda9d01?sharedUserId=techieemma",
         live: true,
     },
-    {
-        num: "04",
-        title: "VEYRONIX: Building an Internal Platform From First Principles",
-        tag: "PLATFORM ENGINEERING",
-        date: "Coming Soon",
-        href: "https://github.com/nickemma/veyronix",
-        live: false,
-    },
-    {
-        num: "05",
-        title: "Treating AI Like a User: How SYNAPSE-AI Governs a Model the Same Way It Governs a Person",
-        tag: "AI INFRASTRUCTURE",
-        date: "Coming Soon",
-        href: "https://github.com/nickemma/synapse-ai",
-        live: false,
-    },
+    // {
+    //     num: "04",
+    //     title: "VEYRONIX: Building an Internal Platform From First Principles",
+    //     tag: "PLATFORM ENGINEERING",
+    //     date: "Coming Soon",
+    //     href: "https://github.com/nickemma/veyronix",
+    //     live: false,
+    // },
+    // {
+    //     num: "05",
+    //     title: "Treating AI Like a User: How SYNAPSE-AI Governs a Model the Same Way It Governs a Person",
+    //     tag: "AI INFRASTRUCTURE",
+    //     date: "Coming Soon",
+    //     href: "https://github.com/nickemma/synapse-ai",
+    //     live: false,
+    // },
 ];
 
 export default function Writing() {

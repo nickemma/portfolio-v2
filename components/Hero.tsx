@@ -4,8 +4,8 @@ import { useEffect, useRef } from "react";
 
 const stats = [
     { value: "4+", label: "Years Engineering" },
+    { value: "5", label: "Systems Built" },
     { value: "40+", label: "Engineers Mentored" },
-    { value: "6", label: "Systems Built" },
 ];
 
 export default function Hero() {
