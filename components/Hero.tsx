@@ -173,7 +173,7 @@ export default function Hero() {
                     <div className="pl-4">
                         Building&nbsp;&nbsp;
                         <span className="text-[#fbbf24]">
-                            &quot;Wellspring&quot;
+                            &quot;Truth4Daily&quot;
                         </span>
                     </div>
                     <div className="pl-4">
@@ -193,13 +193,13 @@ export default function Hero() {
                         {"{"}
                     </div>
                     <div className="pl-4 text-muted">
-                        {"// Wellspring engineering @scale"}
+                        {"// Truth4Daily engineering @scale"}
                     </div>
                     <div className="pl-4">
                         <span className="text-cyan">go</span> e.
                         <span className="text-neon-green">Build</span>(
                         <span className="text-[#fbbf24]">
-                            &quot;Wellspring&quot;
+                            &quot;Truth4Daily&quot;
                         </span>
                         ) <span className="cursor" />
                     </div>

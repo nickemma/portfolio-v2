@@ -12,7 +12,7 @@ const experiences = [
     {
         period: "Feb 2026 — Present",
         role: "Co-Founder & Team Lead",
-        company: "Wellspring",
+        company: "Truth4Daily",
         location: "Ontario, Canada · Remote",
         bullets: [
             "Architecting the platform infrastructure — API design, data model, delivery pipeline, and reliability engineering — for a faith-companion platform targeting 685M+ African Christians."

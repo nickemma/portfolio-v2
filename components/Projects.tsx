@@ -8,7 +8,7 @@ type Project = {
     name: string;
     tagline: string;
     href: string;
-    status: "shipped" | "building" | "design";
+    status: "shipped" | "pushed" | "building" | "design";
     desc?: string;
     metric?: string;
     tags?: string[];
@@ -28,42 +28,42 @@ const projects: Project[] = [
     {
         num: "PROJECT.02",
         name: "VEYRONIX",
-        tagline: "Internal Developer Platform & Deployment Orchestrator",
-        desc: "One deployment workflow across every infrastructure provider. Applications ship through pluggable providers — SSH hosts, PaaS, container registries, Kubernetes via GitOps — while the platform handles identity, relationship-based authorization, secrets, health verification, rollback, approval gates, and audit. Deployments run as durable workflows: kill the worker mid-deploy and it resumes from the last completed step, exactly once. The provider interface is the product — adding a target is a plugin, not a platform rewrite.",
-        metric: "One deployment workflow for every infrastructure provider",
-        tags: ["Go", "Next.js", "Temporal", "OpenFGA", "Kubernetes", "Platform Engineering"],
+        tagline: "Kubernetes Golden-Path Deployment Platform",
+        desc: "A small internal developer platform built around reconciliation. From one plinth.yaml and a single command, it stores desired state, observes what is running, and converges services while providing sensible defaults for reachability, TLS, monitoring, security, rollback, and team isolation. The working vertical slice includes a fake-backend reconciler, queued worker, file-backed state, CLI, HTTP API, Swagger UI, playground, drift repair, rollback, restart recovery, and a Kubernetes adapter with fake-client tests.",
+        metric: "A restart-safe reconciler that repairs drift",
+        tags: ["Go", "Kubernetes", "client-go", "Reconciliation", "Platform Engineering", "GitOps"],
         href: "https://github.com/nickemma/veyronix",
-        status: "building",
+        status: "shipped",
     },
     {
         num: "PROJECT.03",
         name: "LATTICE",
         tagline: "Distributed Search & Retrieval Platform",
-        desc: "Hybrid search over millions of documents, operated to an SLO. OpenSearch on Kubernetes with BM25 and vector retrieval fused by reciprocal rank; Kafka ingest with real backpressure, dead-lettering, and zero-downtime reindex behind an alias swap. Queries run on a deadline and return partial results with the coverage gap declared in the body rather than failing. Publishes p99 during segment merge, a timed restore drill, and cost per million documents.",
-        metric: "Search you can operate, with the numbers published",
-        tags: ["Go", "OpenSearch", "Kafka", "Kubernetes", "Terraform", "Argo CD"],
+        desc: "A distributed-systems learning project that grows from WAL, LSM, MVCC, replication, Raft, and sharding into a runnable hybrid search platform. The Go product path combines BM25 and vector retrieval with reciprocal-rank fusion, Kafka ingest with backpressure and dead-lettering, OpenSearch, Redis caching, snapshots, reindexing, Swagger, a browser playground, metrics, and deterministic chaos tests. The local end-to-end path works now; million-document capacity and production restore measurements remain explicit follow-up evidence.",
+        metric: "Hybrid search with explicit coverage during failure",
+        tags: ["Go", "Raft", "OpenSearch", "Kafka", "Kubernetes", "Chaos Engineering"],
         href: "https://github.com/nickemma/lattice",
-        status: "design",
+        status: "shipped",
     },
     {
         num: "PROJECT.04",
         name: "TESSERA",
-        tagline: "LLM Inference Platform",
-        desc: "Serving open models at a cost you can actually state. vLLM on GPU nodes behind a multi-tenant gateway: per-tenant token budgets enforced before a request reaches a GPU, model routing with fallback that is reported rather than silent, semantic caching namespaced per tenant, and autoscaling driven by queue depth rather than CPU. Publishes measured time-to-first-token, throughput, GPU utilization, cost per million tokens, and the volume below which a hosted API wins.",
-        metric: "Multi-tenant model serving, with the economics measured",
-        tags: ["Go", "vLLM", "KServe", "Kubernetes", "Terraform", "AI Infrastructure"],
+        tagline: "Multi-Tenant LLM Inference Gateway",
+        desc: "A control-plane implementation for serving open models as a dependable internal service. The local gateway authenticates tenants, enforces token budgets and rate limits before inference, supports normal and streaming requests, exposes an OpenAPI contract and playground, and records request and usage telemetry including latency and time-to-first-token. The v0 path runs in memory or through Compose; GPU-backed vLLM, KServe, queue-based autoscaling, semantic caching, and capacity economics remain planned platform layers.",
+        metric: "Token budgets and inference telemetry before the GPU",
+        tags: ["Go", "LLM Serving", "vLLM", "KServe", "Redis", "AI Infrastructure"],
         href: "https://github.com/nickemma/tessera",
-        status: "design",
+        status: "shipped",
     },
     {
         num: "PROJECT.05",
         name: "SYNAPSE-AI",
-        tagline: "Governance Plane for AI Agents",
-        desc: "An agent that calls tools is a principal taking real actions, usually holding a shared API key with its creator's full permissions and leaving a log line. SYNAPSE-AI gives it what a person gets: a cryptographic identity, authority delegated from a named human with scope and expiry, a consent scope it cannot exceed, human approval on high-risk actions, and an immutable audit trail that answers a regulator. Sub-delegation can only narrow. Proven against neural data — involuntary, unboundedly revealing, and newly regulated.",
-        metric: "Treating an agent like a user",
-        tags: ["OpenFGA", "SPIFFE/SPIRE", "Go", "Cedar", "OpenDP", "Compliance", "Zero-Trust"],
-        href: "https://github.com/nickemma/synapse-ai",
-        status: "design",
+        tagline: "Infrastructure Governance Boundary for AI Agents",
+        desc: "An infrastructure-boundary core that governs AI agents as untrusted principals. Each invocation receives short-lived, scoped authority; MCP tool calls cross a deny-by-default policy boundary; egress is restricted; and decisions are hash-chained, exported off-cluster, and made tamper-evident. The repository includes the gateway, Swagger API, disposable playground, end-to-end evidence checks, workload provenance and admission controls, plus a defended large-model serving design. It focuses on containment and evidence after compromise, not prompt-refusal training.",
+        metric: "Scoped credentials, blocked actions, durable evidence",
+        tags: ["Go", "MCP", "SPIFFE/SPIRE", "Kubernetes", "Policy", "Zero-Trust"],
+        href: "https://github.com/nickemma/SYNAPSE-AI",
+        status: "shipped",
     },
 ];
 
@@ -107,6 +107,10 @@ export default function ProjectsCardsViewProgram() {
                                     <span className="flex items-center gap-1.5 font-mono text-[0.55rem] text-neon-green tracking-[0.12em] uppercase">
                                         <span className="w-[6px] h-[6px] rounded-full bg-neon-green pulse-dot" />
                                         Building in public
+                                    </span>
+                                ) : p.status === "pushed" ? (
+                                    <span className="font-mono text-[0.55rem] text-cyan tracking-[0.12em] uppercase">
+                                        Pushed
                                     </span>
                                 ) : (
                                     <span className="font-mono text-[0.55rem] text-muted tracking-[0.12em] uppercase">
@@ -188,6 +192,11 @@ export default function ProjectsCardsViewProgram() {
                                     <span className="flex items-center gap-1.5 font-mono text-[0.52rem] text-neon-green tracking-[0.1em] uppercase">
                                         <span className="w-[5px] h-[5px] rounded-full bg-neon-green pulse-dot" />
                                         Building
+                                    </span>
+                                )}
+                                {p.status === "pushed" && (
+                                    <span className="font-mono text-[0.52rem] text-cyan tracking-[0.1em] uppercase">
+                                        Pushed
                                     </span>
                                 )}
                                 {p.status === "design" && (
