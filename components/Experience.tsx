@@ -11,7 +11,7 @@ const experiences = [
     },
     {
         period: "Feb 2026 — Present",
-        role: "Co-Founder & Team Lead",
+        role: "Founder & CTO",
         company: "Truth4Daily",
         location: "Ontario, Canada · Remote",
         bullets: [
