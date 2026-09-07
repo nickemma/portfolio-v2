@@ -8,7 +8,7 @@ type Project = {
     name: string;
     tagline: string;
     href: string;
-    status: "shipped" | "pushed" | "building" | "design";
+    status: "shipped" | "partial" | "building" | "design";
     desc?: string;
     metric?: string;
     tags?: string[];
@@ -23,7 +23,7 @@ const projects: Project[] = [
         metric: "Raft from scratch + Rust LSM storage + WASM policy engine",
         tags: ["Go", "Rust", "Python", "Raft", "WASM", "gRPC", "Chaos Engineering"],
         href: "https://github.com/nickemma/meridian",
-        status: "shipped",
+        status: "building",
     },
     {
         num: "PROJECT.02",
@@ -33,7 +33,7 @@ const projects: Project[] = [
         metric: "A restart-safe reconciler that repairs drift",
         tags: ["Go", "Kubernetes", "client-go", "Reconciliation", "Platform Engineering", "GitOps"],
         href: "https://github.com/nickemma/veyronix",
-        status: "shipped",
+        status: "partial",
     },
     {
         num: "PROJECT.03",
@@ -43,7 +43,7 @@ const projects: Project[] = [
         metric: "Hybrid search with explicit coverage during failure",
         tags: ["Go", "Raft", "OpenSearch", "Kafka", "Kubernetes", "Chaos Engineering"],
         href: "https://github.com/nickemma/lattice",
-        status: "shipped",
+        status: "partial",
     },
     {
         num: "PROJECT.04",
@@ -53,7 +53,7 @@ const projects: Project[] = [
         metric: "Token budgets and inference telemetry before the GPU",
         tags: ["Go", "LLM Serving", "vLLM", "KServe", "Redis", "AI Infrastructure"],
         href: "https://github.com/nickemma/tessera",
-        status: "shipped",
+        status: "partial",
     },
     {
         num: "PROJECT.05",
@@ -63,7 +63,7 @@ const projects: Project[] = [
         metric: "Scoped credentials, blocked actions, durable evidence",
         tags: ["Go", "MCP", "SPIFFE/SPIRE", "Kubernetes", "Policy", "Zero-Trust"],
         href: "https://github.com/nickemma/SYNAPSE-AI",
-        status: "shipped",
+        status: "partial",
     },
 ];
 
@@ -108,9 +108,9 @@ export default function ProjectsCardsViewProgram() {
                                         <span className="w-[6px] h-[6px] rounded-full bg-neon-green pulse-dot" />
                                         Building in public
                                     </span>
-                                ) : p.status === "pushed" ? (
+                                ) : p.status === "partial" ? (
                                     <span className="font-mono text-[0.55rem] text-cyan tracking-[0.12em] uppercase">
-                                        Pushed
+                                        Partial release
                                     </span>
                                 ) : (
                                     <span className="font-mono text-[0.55rem] text-muted tracking-[0.12em] uppercase">
@@ -165,7 +165,7 @@ export default function ProjectsCardsViewProgram() {
                                    border border-cyan/20 px-7 py-3
                                    hover:bg-bg-3 hover:border-cyan/40 transition-colors duration-300"
                     >
-                        {showAll ? "Hide roadmap" : `Roadmap →  ${remaining.length} more`}
+                        {showAll ? "Hide systems" : `Systems →  ${remaining.length} more`}
                     </button>
                 </div>
             </ScrollReveal>
@@ -191,12 +191,12 @@ export default function ProjectsCardsViewProgram() {
                                 {p.status === "building" && (
                                     <span className="flex items-center gap-1.5 font-mono text-[0.52rem] text-neon-green tracking-[0.1em] uppercase">
                                         <span className="w-[5px] h-[5px] rounded-full bg-neon-green pulse-dot" />
-                                        Building
+                                        Building in public
                                     </span>
                                 )}
-                                {p.status === "pushed" && (
+                                {p.status === "partial" && (
                                     <span className="font-mono text-[0.52rem] text-cyan tracking-[0.1em] uppercase">
-                                        Pushed
+                                        Partial release
                                     </span>
                                 )}
                                 {p.status === "design" && (

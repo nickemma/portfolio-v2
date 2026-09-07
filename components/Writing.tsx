@@ -11,7 +11,7 @@ const articles = [
     },
     {
         num: "02",
-        title: "I Merged a Distributed KV Store and a Secrets Manager Into One System. Here's Why.",
+        title: "I Built a Distributed Secrets Platform From Scratch. The Hardest Part Wasn't the Code.",
         tag: "DISTRIBUTED SYSTEMS",
         date: "2026-06-23",
         href: "https://medium.com/@techieemma/i-built-a-distributed-secrets-platform-from-scratch-the-hardest-part-wasnt-the-code-013201984421?sharedUserId=techieemma",

@@ -43,9 +43,7 @@ const education = {
     gpa: "GPA 3.84 / 4.0",
     school: "University of the People",
     location: "Pasadena, CA",
-    period: "Jun 2026",
-    incoming:
-        "Incoming: MSE, Software Systems & Cybersecurity — University of Pennsylvania",
+    period: "Expected March 2027",
 };
 
 const certifications = [
@@ -166,7 +164,7 @@ export default function Experience() {
                             </div>
 
                             {/* Incoming */}
-                            <div className="mt-6 pt-5 border-t border-cyan/10">
+                            {/*<div className="mt-6 pt-5 border-t border-cyan/10">
                                 <div className="font-mono text-[0.6rem] text-amber-400 tracking-[0.18em] uppercase mb-2">
                                     Incoming
                                 </div>
@@ -178,7 +176,7 @@ export default function Experience() {
                                 <div className="font-mono text-[0.65rem] text-grey mt-1">
                                     University of Pennsylvania
                                 </div>
-                            </div>
+                            </div>*/}
                         </div>
                     </ScrollReveal>
 

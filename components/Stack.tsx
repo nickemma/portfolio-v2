@@ -42,7 +42,7 @@ const categories = [
         ],
     },
     {
-        name: "AI Infrastructure",
+        name: "AI Infrastructure(Learning)",
         items: [
            "model serving",
            "inference systems",
