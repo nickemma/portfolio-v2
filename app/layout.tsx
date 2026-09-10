@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://techieemma.vercel.app"),
-    title: "Nicholas Emmanuel — Distributed Systems & AI Infrastructure Engineer",
+    title: "Nicholas Emmanuel — Distributed Systems & Infrastructure Engineer",
     description:
         "Distributed Systems & AI Infrastructure Engineer. I build secure, reliable distributed systems and AI infrastructure at scale — consensus engines, internal platforms, and LLM inference systems.",
     keywords: [
