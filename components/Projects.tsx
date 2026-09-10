@@ -23,7 +23,7 @@ const projects: Project[] = [
         metric: "Raft from scratch + Rust LSM storage + WASM policy engine",
         tags: ["Go", "Rust", "Python", "Raft", "WASM", "gRPC", "Chaos Engineering"],
         href: "https://github.com/nickemma/meridian",
-        status: "building",
+        status: "shipped",
     },
     {
         num: "PROJECT.02",
@@ -53,7 +53,7 @@ const projects: Project[] = [
         metric: "Token budgets and inference telemetry before the GPU",
         tags: ["Go", "LLM Serving", "vLLM", "KServe", "Redis", "AI Infrastructure"],
         href: "https://github.com/nickemma/tessera",
-        status: "partial",
+        status: "shipped",
     },
     {
         num: "PROJECT.05",
@@ -63,7 +63,7 @@ const projects: Project[] = [
         metric: "Scoped credentials, blocked actions, durable evidence",
         tags: ["Go", "MCP", "SPIFFE/SPIRE", "Kubernetes", "Policy", "Zero-Trust"],
         href: "https://github.com/nickemma/SYNAPSE-AI",
-        status: "partial",
+        status: "shipped",
     },
 ];
 
