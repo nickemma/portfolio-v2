@@ -5,7 +5,7 @@ const experiences = [
         period: "May 2026 — Present",
         role: "Software & Infrastructure Engineer",
         company: "Westpay Global Resources",
-        location: "Remote · Contract",
+        location: "Remote",
         bullets: [
           "Contributed to the development of a fintech payments platform, focusing on backend services for identity verification and transaction processing. Implemented secure, idempotent APIs and robust credential management to improve service reliability and security. Participated in the full software development lifecycle, including planning, testing, deployment, and code reviews, ensuring high-quality and maintainable solutions."],
     },
