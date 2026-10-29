@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 
 const stats = [
-    { value: "4+", label: "Years Engineering" },
+    { value: "5", label: "Years Engineering" },
     // { value: "5", label: "Systems Built" },
     { value: "40+", label: "Engineers Mentored" },
 ];
@@ -144,7 +144,7 @@ export default function Hero() {
                     </div>
                     <div className="pl-4">
                         YearsExp&nbsp;&nbsp;
-                        <span className="text-neon-green">4+</span>
+                        <span className="text-neon-green">5</span>
                     </div>
                     <div className="pl-4">
                         Focus&nbsp;&nbsp;&nbsp;&nbsp;[]
