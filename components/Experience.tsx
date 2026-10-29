@@ -40,7 +40,7 @@ const experiences = [
 
 const education = {
     degree: "B.Sc. Computer Science",
-    gpa: "GPA 3.84 / 4.0",
+    gpa: "GPA 3.80 / 4.0",
     school: "University of the People",
     location: "Pasadena, CA",
     period: "Expected March 2027",
