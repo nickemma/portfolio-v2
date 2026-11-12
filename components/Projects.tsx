@@ -8,7 +8,7 @@ type Project = {
     name: string;
     tagline: string;
     href: string;
-    status: "shipped" | "partial" | "building" | "design";
+    status: "complete" | "research" | "partial" | "building" | "design";
     desc?: string;
     metric?: string;
     tags?: string[];
@@ -19,30 +19,30 @@ const projects: Project[] = [
         num: "PROJECT.01",
         name: "MERIDIAN",
         tagline: "Distributed Secrets & Consistency Platform",
-        desc: "A geo-distributed key-value store where consistency is a per-request choice — not a cluster-wide setting. Strong via Raft quorum, causal via vector clocks, eventual via async gossip. On top: a production-grade secrets platform with WASM-sandboxed policy enforcement, automatic credential rotation, and ML-powered access-anomaly detection. The Raft engine is the foundation — not a dependency.",
-        metric: "Raft from scratch + Rust LSM storage + WASM policy engine",
-        tags: ["Go", "Rust", "Python", "Raft", "WASM", "gRPC", "Chaos Engineering"],
+        desc: "A geo-distributed key-value store where consistency is a per-request choice — not a cluster-wide setting. Strong via Raft quorum, causal via vector clocks, eventual via async gossip. On top: a secrets platform with policy enforcement and automatic credential rotation. The Raft engine is the foundation — not a dependency.",
+        metric: "Raft from scratch + Rust LSM storage",
+        tags: ["Go", "Rust", "Raft", "gRPC", "Chaos Engineering"],
         href: "https://github.com/nickemma/meridian",
-        status: "shipped",
+        status: "research",
     },
     {
         num: "PROJECT.02",
+        name: "LATTICE",
+        tagline: "Distributed Search & Retrieval Platform",
+        desc: "A hybrid search platform whose responses declare their own coverage — shards queried versus shards answered — instead of silently returning partial results. BM25 and vector retrieval with reciprocal-rank fusion, Kafka ingest, and OpenSearch. Measured at 1,000,008 documents: 191.85 ms p99 under a 200 ms deadline.",
+        metric: "1M documents · explicit coverage under shard loss",
+        tags: ["Go", "Raft", "OpenSearch", "Kafka", "Kubernetes", "Chaos Engineering"],
+        href: "https://github.com/nickemma/lattice",
+        status: "complete",
+    },
+    {
+        num: "PROJECT.03",
         name: "VEYRONIX",
         tagline: "Kubernetes Golden-Path Deployment Platform",
         desc: "A small internal developer platform built around reconciliation. From one plinth.yaml and a single command, it stores desired state, observes what is running, and converges services while providing sensible defaults for reachability, TLS, monitoring, security, rollback, and team isolation. The working vertical slice includes a fake-backend reconciler, queued worker, file-backed state, CLI, HTTP API, Swagger UI, playground, drift repair, rollback, restart recovery, and a Kubernetes adapter with fake-client tests.",
         metric: "A restart-safe reconciler that repairs drift",
         tags: ["Go", "Kubernetes", "client-go", "Reconciliation", "Platform Engineering", "GitOps"],
         href: "https://github.com/nickemma/veyronix",
-        status: "partial",
-    },
-    {
-        num: "PROJECT.03",
-        name: "LATTICE",
-        tagline: "Distributed Search & Retrieval Platform",
-        desc: "A distributed-systems learning project that grows from WAL, LSM, MVCC, replication, Raft, and sharding into a runnable hybrid search platform. The Go product path combines BM25 and vector retrieval with reciprocal-rank fusion, Kafka ingest with backpressure and dead-lettering, OpenSearch, Redis caching, snapshots, reindexing, Swagger, a browser playground, metrics, and deterministic chaos tests. The local end-to-end path works now; million-document capacity and production restore measurements remain explicit follow-up evidence.",
-        metric: "Hybrid search with explicit coverage during failure",
-        tags: ["Go", "Raft", "OpenSearch", "Kafka", "Kubernetes", "Chaos Engineering"],
-        href: "https://github.com/nickemma/lattice",
         status: "partial",
     },
     {
@@ -53,7 +53,7 @@ const projects: Project[] = [
         metric: "Token budgets and inference telemetry before the GPU",
         tags: ["Go", "LLM Serving", "vLLM", "KServe", "Redis", "AI Infrastructure"],
         href: "https://github.com/nickemma/tessera",
-        status: "shipped",
+        status: "partial",
     },
     {
         num: "PROJECT.05",
@@ -63,7 +63,7 @@ const projects: Project[] = [
         metric: "Scoped credentials, blocked actions, durable evidence",
         tags: ["Go", "MCP", "SPIFFE/SPIRE", "Kubernetes", "Policy", "Zero-Trust"],
         href: "https://github.com/nickemma/SYNAPSE-AI",
-        status: "shipped",
+        status: "partial",
     },
 ];
 
@@ -112,11 +112,15 @@ export default function ProjectsCardsViewProgram() {
                                     <span className="font-mono text-[0.55rem] text-cyan tracking-[0.12em] uppercase">
                                         Partial release
                                     </span>
-                                ) : (
-                                    <span className="font-mono text-[0.55rem] text-muted tracking-[0.12em] uppercase">
-                                        Shipped
+                                ) : p.status === "research" ? (
+                                    <span className="font-mono text-[0.55rem] text-amber-400 tracking-[0.12em] uppercase">
+                                        Research prototype
                                     </span>
-                                )}
+                                ) : p.status === "complete" ? (
+                                    <span className="font-mono text-[0.55rem] text-neon-green tracking-[0.12em] uppercase">
+                                        Complete
+                                    </span>
+                                ) : null}
                             </div>
 
                             <h3 className="font-display text-[2rem] text-primary tracking-[0.04em] leading-none mb-2">
@@ -205,9 +209,14 @@ export default function ProjectsCardsViewProgram() {
                                         In design
                                     </span>
                                 )}
-                                {p.status === "shipped" && (
-                                    <span className="font-mono text-[0.52rem] text-muted tracking-[0.1em] uppercase">
-                                        Shipped
+                                {p.status === "research" && (
+                                    <span className="font-mono text-[0.52rem] text-amber-400 tracking-[0.1em] uppercase">
+                                        Research prototype
+                                    </span>
+                                )}
+                                {p.status === "complete" && (
+                                    <span className="font-mono text-[0.52rem] text-neon-green tracking-[0.1em] uppercase">
+                                        Complete
                                     </span>
                                 )}
                             </div>

@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 
 const stats = [
-    { value: "5", label: "Years Engineering" },
+    { value: "4+", label: "Years Engineering" },
     // { value: "5", label: "Systems Built" },
     { value: "40+", label: "Engineers Mentored" },
 ];
@@ -31,7 +31,7 @@ export default function Hero() {
                 {/* Badge */}
                 <div className="reveal hero-item flex items-center gap-3 font-mono text-[0.65rem] text-neon-green tracking-[0.18em] uppercase mb-7">
                     <span className="w-[7px] h-[7px] rounded-full bg-neon-green pulse-dot shrink-0" />
-                    Available — Open to Distributed Systems &amp; Infrastructure roles
+                    Research — Distributed Systems &amp; AI Infrastructure
                 </div>
 
                 {/* Name */}
@@ -144,7 +144,7 @@ export default function Hero() {
                     </div>
                     <div className="pl-4">
                         YearsExp&nbsp;&nbsp;
-                        <span className="text-neon-green">5</span>
+                        <span className="text-neon-green">4</span>
                     </div>
                     <div className="pl-4">
                         Focus&nbsp;&nbsp;&nbsp;&nbsp;[]
@@ -177,7 +177,7 @@ export default function Hero() {
                         </span>
                     </div>
                     <div className="pl-4">
-                        OpenTo&nbsp;&nbsp;&nbsp;
+                        Research&nbsp;&nbsp;
                         <span className="text-[#fbbf24]">
                             &quot;dist-systems / ai-infra&quot;
                         </span>

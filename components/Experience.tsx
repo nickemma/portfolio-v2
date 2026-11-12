@@ -5,7 +5,7 @@ const experiences = [
         period: "May 2026 — Present",
         role: "Software & Infrastructure Engineer",
         company: "Westpay Global Resources",
-        location: "Remote",
+        location: "Lagos, Nigeria · Remote",
         bullets: [
           "Contributed to the development of a fintech payments platform, focusing on backend services for identity verification and transaction processing. Implemented secure, idempotent APIs and robust credential management to improve service reliability and security. Participated in the full software development lifecycle, including planning, testing, deployment, and code reviews, ensuring high-quality and maintainable solutions."],
     },
@@ -13,7 +13,7 @@ const experiences = [
         period: "Feb 2026 — Present",
         role: "Founder & CTO",
         company: "Truth4Daily",
-        location: "Ontario, Canada · Remote",
+        location: "Lagos, Nigeria · Remote",
         bullets: [
             "Architecting the platform infrastructure — API design, data model, delivery pipeline, and reliability engineering — for a faith-companion platform targeting 685M+ African Christians."
         ],
@@ -28,12 +28,23 @@ const experiences = [
         ],
     },
     {
-        period: "Jan 2022 — Aug 2023",
-        role: "Backend Engineer",
-        company: "Taaleem",
+        period: "Jan 2023 — Aug 2023",
+        role: "Back End Developer",
+        company: "Taaleem.ma",
         location: "Casablanca, Morocco (Remote) · Contract",
         bullets: [
             "Built RESTful backend services with NestJS and PostgreSQL to power an educational platform, enabling features that drove a 25% increase in student enrollment and an auto-grading engine that returned assignment results to 91% of students within 24 hours.",
+        ],
+    },
+    {
+        period: "Apr 2022 — Jan 2023",
+        role: "Frontend Developer Intern",
+        company: "XOOMMIT",
+        location: "Brazil (Remote) · Part-time",
+        bullets: [
+            "Collaborated with cross-functional teams to implement client-centric solutions tailored to specific business needs.",
+            "Contributed to the development of customized solutions, demonstrating effective communication and understanding of client requirements.",
+            "Engaged in a dynamic environment at XOOMMIT, enhancing problem-solving skills and adaptability.",
         ],
     },
 ];
